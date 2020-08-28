@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TBackgroundPlay" table="t_background_play" catalog="css_center">
+        <id name="bpId" type="string">
+            <column name="bp_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TBackground" class="com.nvg.css.db.domain.TBackground" fetch="select">
+            <column name="bg_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TBackgroundSchedule" class="com.nvg.css.db.domain.TBackgroundSchedule" fetch="select">
+            <column name="bs_id" length="128" />
+        </many-to-one>
+        <property name="bpName" type="string">
+            <column name="bp_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpIndex" type="java.lang.Integer">
+            <column name="bp_index" />
+        </property>
+        <property name="bpColumn" type="java.lang.Integer">
+            <column name="bp_column" />
+        </property>
+        <property name="bpRow" type="java.lang.Integer">
+            <column name="bp_row" />
+        </property>
+        <property name="bpTop" type="java.lang.Integer">
+            <column name="bp_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpLeft" type="java.lang.Integer">
+            <column name="bp_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpBottom" type="java.lang.Integer">
+            <column name="bp_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpRight" type="java.lang.Integer">
+            <column name="bp_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpHeight" type="java.lang.Integer">
+            <column name="bp_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpWidth" type="java.lang.Integer">
+            <column name="bp_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bpDisplay" type="string">
+            <column name="bp_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="bpPosition" type="string">
+            <column name="bp_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="bpOverflow" type="string">
+            <column name="bp_overflow" length="16" />
+        </property>
+        <property name="bpLayer" type="java.lang.Integer">
+            <column name="bp_layer" />
+        </property>
+        <property name="bpPaddingTop" type="java.lang.Integer">
+            <column name="bp_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="bpPaddingRight" type="java.lang.Integer">
+            <column name="bp_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="bpPaddingBottom" type="java.lang.Integer">
+            <column name="bp_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="bpPaddingLeft" type="java.lang.Integer">
+            <column name="bp_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

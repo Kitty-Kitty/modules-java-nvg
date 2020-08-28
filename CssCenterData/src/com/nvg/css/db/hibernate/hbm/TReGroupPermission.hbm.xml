@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TReGroupPermission" table="t_re_group_permission" catalog="css_center">
+        <id name="rgpId" type="java.lang.Integer">
+            <column name="rgp_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TUser" class="com.nvg.css.db.domain.TUser" fetch="select">
+            <column name="usrg_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TUserGroup" class="com.nvg.css.db.domain.TUserGroup" update="false" insert="false" fetch="select">
+            <column name="usrg_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+            </column>
+        </many-to-one>
+        <property name="ugpGet" type="boolean">
+            <column name="ugp_get" not-null="true" />
+        </property>
+        <property name="ugpSet" type="boolean">
+            <column name="ugp_set" not-null="true" />
+        </property>
+        <property name="ugpBackground" type="string">
+            <column name="ugp_background" length="128" />
+        </property>
+        <property name="ugpFont" type="string">
+            <column name="ugp_font" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

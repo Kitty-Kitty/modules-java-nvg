@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<uml:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xmi:id="_ZrvDPt0OEeWIwZvUPQQOHw" name="Mina4Gmp">
+  <eAnnotations xmi:id="_ZrvDP90OEeWIwZvUPQQOHw" source="uml2.diagrams" references="_ZrvDQN0OEeWIwZvUPQQOHw">
+    <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_ZrvDQN0OEeWIwZvUPQQOHw" type="Class" name="Main">
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_fRuo8N0TEeWIwZvUPQQOHw" element="_RRFgEN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_fRuo8t0TEeWIwZvUPQQOHw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_fRuo890TEeWIwZvUPQQOHw" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_fRuo9N0TEeWIwZvUPQQOHw" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_fRuo9d0TEeWIwZvUPQQOHw" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_fRuo9t0TEeWIwZvUPQQOHw" type="Parent"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_fRuo990TEeWIwZvUPQQOHw" type="PackageContents" collapsed="true" canonical="false"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fRuo8d0TEeWIwZvUPQQOHw" x="1056" y="660"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_f0ySsN0TEeWIwZvUPQQOHw" element="_YymwwN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_f0ySst0TEeWIwZvUPQQOHw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_f0ySs90TEeWIwZvUPQQOHw" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_f08DsN0TEeWIwZvUPQQOHw" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_f08Dsd0TEeWIwZvUPQQOHw" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_f08Dst0TEeWIwZvUPQQOHw" type="Parent"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_f08Ds90TEeWIwZvUPQQOHw" type="PackageContents" collapsed="true" canonical="false"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f0ySsd0TEeWIwZvUPQQOHw" x="1056" y="2376"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_gUH6EN0TEeWIwZvUPQQOHw" element="_jJ5UsN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_gUH6Et0TEeWIwZvUPQQOHw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_gUH6E90TEeWIwZvUPQQOHw" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gUH6FN0TEeWIwZvUPQQOHw" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gUH6Fd0TEeWIwZvUPQQOHw" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gUH6Ft0TEeWIwZvUPQQOHw" type="Parent"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_gUH6F90TEeWIwZvUPQQOHw" type="PackageContents" collapsed="true" canonical="false"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gUH6Ed0TEeWIwZvUPQQOHw" x="1056" y="4620"/>
+      </children>
+      <children xmi:type="umlnotation:UMLShape" xmi:id="_gyGPgN0TEeWIwZvUPQQOHw" element="_nQXa0N0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+        <children xmi:type="notation:DecorationNode" xmi:id="_gyGPgt0TEeWIwZvUPQQOHw" type="ImageCompartment">
+          <layoutConstraint xmi:type="notation:Size" xmi:id="_gyGPg90TEeWIwZvUPQQOHw" width="1320" height="1320"/>
+        </children>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gyGPhN0TEeWIwZvUPQQOHw" type="Stereotype"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gyGPhd0TEeWIwZvUPQQOHw" type="Name"/>
+        <children xmi:type="notation:BasicDecorationNode" xmi:id="_gyGPht0TEeWIwZvUPQQOHw" type="Parent"/>
+        <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_gyGPh90TEeWIwZvUPQQOHw" type="PackageContents" collapsed="true" canonical="false"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gyGPgd0TEeWIwZvUPQQOHw" x="1188" y="7128"/>
+      </children>
+    </contents>
+  </eAnnotations>
+  <eAnnotations xmi:id="_ZrvDQd0OEeWIwZvUPQQOHw" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_ZrvDQt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSpecificInstanceType1" value="1"/>
+    <details xmi:id="_ZrvDQ90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBLifeLine" value="1"/>
+    <details xmi:id="_ZrvDRN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBFunction" value="1"/>
+    <details xmi:id="_ZrvDRd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBRealization" value="1"/>
+    <details xmi:id="_ZrvDRt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInstance" value="1"/>
+    <details xmi:id="_ZrvDR90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStereotypedDeployment1" value="1"/>
+    <details xmi:id="_ZrvDSN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBUseCaseDiagram" value="1"/>
+    <details xmi:id="_ZrvDSd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSequenceDiagram" value="1"/>
+    <details xmi:id="_ZrvDSt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBAction" value="1"/>
+    <details xmi:id="_ZrvDS90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBClassDiagram" value="1"/>
+    <details xmi:id="_ZrvDTN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCollaboration" value="1"/>
+    <details xmi:id="_ZrvDTd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBDeployment1" value="1"/>
+    <details xmi:id="_ZrvDTt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBDeploymentDiagram" value="1"/>
+    <details xmi:id="_ZrvDT90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBRelationship1" value="1"/>
+    <details xmi:id="_ZrvDUN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBFreeFormDiagram" value="1"/>
+    <details xmi:id="_ZrvDUd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComponentDiagram" value="1"/>
+    <details xmi:id="_ZrvDUt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBClass" value="1"/>
+    <details xmi:id="_ZrvDU90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBObjectDiagram" value="1"/>
+    <details xmi:id="_ZrvDVN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBArtifact" value="1"/>
+    <details xmi:id="_ZrvDVd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStateChartDiagram" value="1"/>
+    <details xmi:id="_ZrvDVt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComment1" value="1"/>
+    <details xmi:id="_ZrvDV90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBActivity1" value="1"/>
+    <details xmi:id="_ZrvDWN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBDependancy" value="1"/>
+    <details xmi:id="_ZrvDWd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBElementImport1" value="1"/>
+    <details xmi:id="_ZrvDWt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBPackage" value="1"/>
+    <details xmi:id="_ZrvDW90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStateMachine1" value="1"/>
+    <details xmi:id="_ZrvDXN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCommunication" value="1"/>
+    <details xmi:id="_ZrvDXd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStereotypedComponent" value="1"/>
+    <details xmi:id="_ZrvDXt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInterface" value="1"/>
+    <details xmi:id="_ZrvDX90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBActivityDiagram" value="1"/>
+    <details xmi:id="_ZrvDYN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCommunicationDiagram" value="1"/>
+    <details xmi:id="_ZrvDYd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComponent" value="1"/>
+    <details xmi:id="_ZrvDYt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBUseCase1" value="1"/>
+    <details xmi:id="_ZrvDY90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSequence1" value="1"/>
+    <details xmi:id="_ZrvDZN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCollaborationUse" value="1"/>
+    <details xmi:id="_ZrvDZd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStereotypedArtifact" value="1"/>
+    <details xmi:id="_ZrvDZt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBAbstractionRelation" value="1"/>
+    <details xmi:id="_ZrvDZ90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBClassTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDaN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTimingDiagram" value="1"/>
+    <details xmi:id="_ZrvDad0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBDeploymentSpecification" value="1"/>
+    <details xmi:id="_ZrvDat0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBRelationship2" value="1"/>
+    <details xmi:id="_ZrvDa90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBRelationship3" value="1"/>
+    <details xmi:id="_ZrvDbN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInteractionOverview" value="1"/>
+    <details xmi:id="_ZrvDbd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBElementImport2" value="1"/>
+    <details xmi:id="_ZrvDbt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBPackageTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDb90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBPrimitiveTypeTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDcN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInterfaceTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDcd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStereotypedClass" value="1"/>
+    <details xmi:id="_ZrvDct0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStateMachine2" value="1"/>
+    <details xmi:id="_ZrvDc90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTemplate" value="1"/>
+    <details xmi:id="_ZrvDdN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBUsage" value="1"/>
+    <details xmi:id="_ZrvDdd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInteractionOverviewDiagram" value="1"/>
+    <details xmi:id="_ZrvDdt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSubsystem" value="1"/>
+    <details xmi:id="_ZrvDd90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBStructureDiagram" value="1"/>
+    <details xmi:id="_ZrvDeN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSequence2" value="1"/>
+    <details xmi:id="_ZrvDed0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTypes1" value="1"/>
+    <details xmi:id="_ZrvDet0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBConstraint" value="1"/>
+    <details xmi:id="_ZrvDe90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBFragment" value="1"/>
+    <details xmi:id="_ZrvDfN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSpecificInstanceType2" value="1"/>
+    <details xmi:id="_ZrvDfd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBProfile" value="1"/>
+    <details xmi:id="_ZrvDft0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBSignal" value="1"/>
+    <details xmi:id="_ZrvDf90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComponentTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDgN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTypes4" value="1"/>
+    <details xmi:id="_ZrvDgd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTypes2" value="1"/>
+    <details xmi:id="_ZrvDgt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTypes3" value="1"/>
+    <details xmi:id="_ZrvDg90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBFunctionTemplateParameter" value="1"/>
+    <details xmi:id="_ZrvDhN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBDeployment2" value="1"/>
+    <details xmi:id="_ZrvDhd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBTiming" value="1"/>
+    <details xmi:id="_ZrvDht0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComment3" value="1"/>
+    <details xmi:id="_ZrvDh90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBComment2" value="1"/>
+    <details xmi:id="_ZrvDiN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBProfileApplication" value="1"/>
+    <details xmi:id="_ZrvDid0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBActivity3" value="1"/>
+    <details xmi:id="_ZrvDit0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBActivity2" value="1"/>
+    <details xmi:id="_ZrvDi90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBEvent2" value="1"/>
+    <details xmi:id="_ZrvDjN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBActivity4" value="1"/>
+    <details xmi:id="_ZrvDjd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBEvent1" value="1"/>
+    <details xmi:id="_ZrvDjt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInformationFlow" value="1"/>
+    <details xmi:id="_ZrvDj90OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCompositeStructure2" value="1"/>
+    <details xmi:id="_ZrvDkN0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBCompositeStructure1" value="1"/>
+    <details xmi:id="_ZrvDkd0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBInteraction" value="1"/>
+    <details xmi:id="_ZrvDkt0OEeWIwZvUPQQOHw" key="com.ibm.xtools.activities.umlBBUseCase2" value="1"/>
+  </eAnnotations>
+  <packageImport xmi:id="_ZrvDk90OEeWIwZvUPQQOHw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RRFgEN0QEeWIwZvUPQQOHw" name="com.nvg.mina.conf">
+    <eAnnotations xmi:id="_RRFgEd0QEeWIwZvUPQQOHw" source="uml2.diagrams" references="_RRFgEt0QEeWIwZvUPQQOHw">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_RRFgEt0QEeWIwZvUPQQOHw" type="Freeform" name="Main">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_U0YAoN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_U0YAot0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_U0YAo90QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_U0YApN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_U0YApd0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_U0YApt0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_U0YAp90QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_U0YAqN0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_U0YAqd0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgMinaConfigure%5Bjcu%5Ename=NvgMinaConfigure.java%5Bjpack%5Ename=com.nvg.mina.conf%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U0YAod0QEeWIwZvUPQQOHw" x="3432" y="1188"/>
+        </children>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_YymwwN0QEeWIwZvUPQQOHw" name="com.nvg.mina.core">
+    <eAnnotations xmi:id="_Yymwwd0QEeWIwZvUPQQOHw" source="uml2.diagrams" references="_Yymwwt0QEeWIwZvUPQQOHw">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_Yymwwt0QEeWIwZvUPQQOHw" type="Freeform" name="Main">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_etQKQN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_etQKQt0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_etQKQ90QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_etQKRN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_etQKRd0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_etQKRt0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_etQKR90QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_etQKSN0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_etQKSd0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgMinaServerIoHandler%5Bjcu%5Ename=NvgMinaServerIoHandler.java%5Bjpack%5Ename=com.nvg.mina.core%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_etQKQd0QEeWIwZvUPQQOHw" x="1320" y="2112"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_fVG0cN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_fVG0ct0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_fVG0c90QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_fVP-YN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_fVP-Yd0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_fVP-Yt0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_fVP-Y90QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_fVP-ZN0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_fVP-Zd0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgMinaServerLogger%5Bjcu%5Ename=NvgMinaServerLogger.java%5Bjpack%5Ename=com.nvg.mina.core%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fVG0cd0QEeWIwZvUPQQOHw" x="10032" y="2244"/>
+        </children>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jJ5UsN0QEeWIwZvUPQQOHw" name="com.nvg.mina.decoder">
+    <eAnnotations xmi:id="_jJ5Usd0QEeWIwZvUPQQOHw" source="uml2.diagrams" references="_jJ5Ust0QEeWIwZvUPQQOHw">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_jJ5Ust0QEeWIwZvUPQQOHw" type="Freeform" name="Main">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_l3MBYN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_l3MBYt0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_l3MBY90QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBZN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBZd0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBZt0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBZ90QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBaN0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBad0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgBaseDecoder%5Bjcu%5Ename=NvgBaseDecoder.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l3MBYd0QEeWIwZvUPQQOHw" y="4807"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_l3MBat0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_l3MBbN0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_l3MBbd0QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBbt0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBb90QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBcN0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBcd0QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBct0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBc90QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgBaseEncoder%5Bjcu%5Ename=NvgBaseEncoder.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l3MBa90QEeWIwZvUPQQOHw" x="5715" y="4570"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_l3MBdN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_l3MBdt0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_l3MBd90QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBeN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBed0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_l3MBet0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBe90QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBfN0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_l3MBfd0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgBaseProtocolCodecFactory%5Bjcu%5Ename=NvgBaseProtocolCodecFactory.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l3MBdd0QEeWIwZvUPQQOHw" x="2037"/>
+        </children>
+        <element xsi:nil="true"/>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_l6NgMN0QEeWIwZvUPQQOHw" source="_l3MBdN0QEeWIwZvUPQQOHw" target="_l3MBat0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_l6NgMt0QEeWIwZvUPQQOHw" type="KindLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgNN0QEeWIwZvUPQQOHw" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgNt0QEeWIwZvUPQQOHw" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgNd0QEeWIwZvUPQQOHw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l6NgM90QEeWIwZvUPQQOHw" y="-186"/>
+          </children>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=NvgBaseProtocolCodecFactory%5Bjcu%5Ename=NvgBaseProtocolCodecFactory.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=NvgBaseEncoder%5Bjcu%5Ename=NvgBaseEncoder.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l6NgMd0QEeWIwZvUPQQOHw" points="[52, 101, -2070, -2221]$[52, 735, -2070, -1587]$[2161, 735, 39, -1587]$[2161, 2322, 39, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mAS6EN0QEeWIwZvUPQQOHw" id="(0.6667113277765389,0.9572127139364304)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mAS6Ed0QEeWIwZvUPQQOHw" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="umlnotation:UMLConnector" xmi:id="_l6NgN90QEeWIwZvUPQQOHw" source="_l3MBdN0QEeWIwZvUPQQOHw" target="_l3MBYN0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+          <children xmi:type="notation:DecorationNode" xmi:id="_l6NgOd0QEeWIwZvUPQQOHw" type="KindLabel">
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgO90QEeWIwZvUPQQOHw" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgPd0QEeWIwZvUPQQOHw" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_l6NgPN0QEeWIwZvUPQQOHw" type="Name"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_l6NgOt0QEeWIwZvUPQQOHw" y="-186"/>
+          </children>
+          <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=NvgBaseProtocolCodecFactory%5Bjcu%5Ename=NvgBaseProtocolCodecFactory.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=NvgBaseDecoder%5Bjcu%5Ename=NvgBaseDecoder.java%5Bjpack%5Ename=com.nvg.mina.decoder%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D%5D$uml.Usage"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l6NgON0QEeWIwZvUPQQOHw" points="[26, 101, 2148, -2458]$[26, 735, 2148, -1824]$[-2082, 735, 40, -1824]$[-2082, 2559, 40, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mAS6Et0QEeWIwZvUPQQOHw" id="(0.33337796540477244,0.9572127139364304)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mAS6E90QEeWIwZvUPQQOHw" id="(0.49999999999999994,0.0)"/>
+        </edges>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nQXa0N0QEeWIwZvUPQQOHw" name="com.nvg.mina.test">
+    <eAnnotations xmi:id="_nQhL0N0QEeWIwZvUPQQOHw" source="uml2.diagrams" references="_nQhL0d0QEeWIwZvUPQQOHw">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_nQhL0d0QEeWIwZvUPQQOHw" type="Freeform" name="Main">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_qFyv0N0QEeWIwZvUPQQOHw" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_qFzW4N0QEeWIwZvUPQQOHw" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_qFzW4d0QEeWIwZvUPQQOHw" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_qFz98N0QEeWIwZvUPQQOHw" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_qFz98d0QEeWIwZvUPQQOHw" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_qFz98t0QEeWIwZvUPQQOHw" type="Parent"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_qF0lAN0QEeWIwZvUPQQOHw" visible="false" type="ANNOTATION_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_qF0lAd0QEeWIwZvUPQQOHw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT"/>
+          <children xmi:type="notation:ListCompartment" xmi:id="_qF1MEN0QEeWIwZvUPQQOHw" type="ANNOTATED_OPERATION_COMPARTMENT"/>
+          <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=NvgMinaServer%5Bjcu%5Ename=NvgMinaServer.java%5Bjpack%5Ename=com.nvg.mina.test%5Bjsrcroot%5Esrcfolder=mina4nvg%5Bproject%5Eid=Mina4Gmp%5D%5D%5D%5D$uml.Class"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qFyv0d0QEeWIwZvUPQQOHw" x="1848" y="1452"/>
+        </children>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </packagedElement>
+  <profileApplication xmi:id="_ZrvDlN0OEeWIwZvUPQQOHw">
+    <eAnnotations xmi:id="_ZrvDld0OEeWIwZvUPQQOHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_ZrvDlt0OEeWIwZvUPQQOHw">
+    <eAnnotations xmi:id="_ZrvDl90OEeWIwZvUPQQOHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+  </profileApplication>
+  <profileApplication xmi:id="_ZrvDmN0OEeWIwZvUPQQOHw">
+    <eAnnotations xmi:id="_ZrvDmd0OEeWIwZvUPQQOHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+  </profileApplication>
+</uml:Package>

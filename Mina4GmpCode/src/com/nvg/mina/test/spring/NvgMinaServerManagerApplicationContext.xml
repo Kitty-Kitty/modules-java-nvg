@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.5.xsd 
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+						">
+						
+	<!-- 引入网络配置文件NetworkConfigure.properties -->
+	<context:property-placeholder location="classpath:com/nvg/mina/test/spring/NetworkConfigure.properties"/>
+	
+	<!--创建TCP IoAcceptor-->
+	<bean id="nvgMinaIoAcceptorTcp" class="com.nvg.mina.core.acceptor.NvgMinaIoAcceptorTcp">
+		<property name="port" value="${tcpPort}"/>
+		<property name="idleTime" value="${tcpIdleTime}"/>
+		<property name="handler" value="com.nvg.mina.gmp.decoder.NvgGmpServerIoHandler"/>
+		<property name="protocolCodecFactory" value="com.nvg.mina.gmp.decoder.NvgGmpProtocolCodecFactory"/>
+	</bean>
+	
+	<!--创建UDP IoAcceptor-->
+	<bean id="nvgMinaIoAcceptorUdp" class="com.nvg.mina.core.acceptor.NvgMinaIoAcceptorUdp">
+		<property name="port" value="${udpPort}"/>
+		<property name="idleTime" value="${udpIdleTime}"/>
+		<property name="handler" value="com.nvg.mina.gmp.decoder.NvgGmpServerIoHandler"/>
+		<property name="protocolCodecFactory" value="com.nvg.mina.gmp.decoder.NvgGmpProtocolCodecFactory"/>
+	</bean>
+	
+	<!--创建IoAcceptor管理器NvgMinaServerManager-->
+	<bean id="nvgMinaServerManager" class="com.nvg.mina.core.NvgMinaServerManager" init-method="start">
+		<!-- 配置请求管理器 -->
+		<property name="processesManager" ref="nvgGmpProcessesManager"/>
+		<!-- 配置请求监听 -->
+		<property name="ioAcceptorList">
+			<list>
+				<ref bean="nvgMinaIoAcceptorTcp"/>
+				<ref bean="nvgMinaIoAcceptorUdp"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TBackground" table="t_background" catalog="css_center">
+        <id name="bgId" type="string">
+            <column name="bg_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TMonitor" class="com.nvg.css.db.domain.TMonitor" fetch="select">
+            <column name="mnt_id" length="128">
+                <comment>??????????id</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <property name="bgType" type="string">
+            <column name="bg_type" length="128" />
+        </property>
+        <property name="bgUri" type="string">
+            <column name="bg_uri" length="128" />
+        </property>
+        <property name="bgComment" type="string">
+            <column name="bg_comment" length="128" />
+        </property>
+        <set name="TBackgroundPlays" table="t_background_play" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="bg_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackgroundPlay" />
+        </set>
+    </class>
+</hibernate-mapping>

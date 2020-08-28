@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TBackgroundSchedule" table="t_background_schedule" catalog="css_center">
+        <id name="bsId" type="string">
+            <column name="bs_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <property name="bsName" type="string">
+            <column name="bs_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="bsIndex" type="java.lang.Integer">
+            <column name="bs_index" />
+        </property>
+        <property name="bsMode" type="string">
+            <column name="bs_mode" length="16" />
+        </property>
+        <set name="TBackgroundPlays" table="t_background_play" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="bs_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackgroundPlay" />
+        </set>
+    </class>
+</hibernate-mapping>

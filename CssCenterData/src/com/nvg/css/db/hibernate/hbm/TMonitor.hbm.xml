@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TMonitor" table="t_monitor" catalog="css_center">
+        <id name="mntId" type="string">
+            <column name="mnt_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <property name="mntName" type="string">
+            <column name="mnt_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntIndex" type="java.lang.Integer">
+            <column name="mnt_index">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntColumn" type="java.lang.Integer">
+            <column name="mnt_column">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntRow" type="java.lang.Integer">
+            <column name="mnt_row">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntTop" type="java.lang.Integer">
+            <column name="mnt_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntLeft" type="java.lang.Integer">
+            <column name="mnt_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntBottom" type="java.lang.Integer">
+            <column name="mnt_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntRight" type="java.lang.Integer">
+            <column name="mnt_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntHeight" type="java.lang.Integer">
+            <column name="mnt_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntWidth" type="java.lang.Integer">
+            <column name="mnt_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntDisplay" type="string">
+            <column name="mnt_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntPosition" type="string">
+            <column name="mnt_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntOverflow" type="string">
+            <column name="mnt_overflow" length="16" />
+        </property>
+        <property name="mntLayer" type="java.lang.Integer">
+            <column name="mnt_layer" />
+        </property>
+        <property name="mntPaddingTop" type="java.lang.Integer">
+            <column name="mnt_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntPaddingRight" type="java.lang.Integer">
+            <column name="mnt_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntPaddingBottom" type="java.lang.Integer">
+            <column name="mnt_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntPaddingLeft" type="java.lang.Integer">
+            <column name="mnt_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="mntBackcolor" type="string">
+            <column name="mnt_backcolor" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntCheckSourceColor" type="string">
+            <column name="mnt_check_source_color" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntCheckDestColor" type="string">
+            <column name="mnt_check_dest_color" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntBacksizeHeight" type="java.lang.Integer">
+            <column name="mnt_backsize_height">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntBacksizeWidth" type="java.lang.Integer">
+            <column name="mnt_backsize_width">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntLuminance" type="java.lang.Integer">
+            <column name="mnt_luminance">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntContrast" type="java.lang.Integer">
+            <column name="mnt_contrast">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntColorTemperature" type="java.lang.Integer">
+            <column name="mnt_color_temperature">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="mntSwitch" type="java.lang.Boolean">
+            <column name="mnt_switch">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <set name="TControllers" table="t_controller" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="mnt_id" length="128">
+                    <comment>
+                    &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TController" />
+        </set>
+        <set name="TBackgrounds" table="t_background" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="mnt_id" length="128">
+                    <comment>??????????id</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackground" />
+        </set>
+        <set name="TFontBackgrounds" table="t_font_background" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="mnt_id" length="128">
+                    <comment>
+                    &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TFontBackground" />
+        </set>
+    </class>
+</hibernate-mapping>

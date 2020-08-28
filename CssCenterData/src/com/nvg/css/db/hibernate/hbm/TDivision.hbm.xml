@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TDivision" table="t_division" catalog="css_center">
+        <id name="divId" type="string">
+            <column name="div_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TTemplate" class="com.nvg.css.db.domain.TTemplate" fetch="select">
+            <column name="tp_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+            </column>
+        </many-to-one>
+        <property name="divName" type="string">
+            <column name="div_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divIndex" type="java.lang.Integer">
+            <column name="div_index" />
+        </property>
+        <property name="divColumn" type="java.lang.Integer">
+            <column name="div_column" />
+        </property>
+        <property name="divRow" type="java.lang.Integer">
+            <column name="div_row" />
+        </property>
+        <property name="divTop" type="java.lang.Integer">
+            <column name="div_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divLeft" type="java.lang.Integer">
+            <column name="div_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divBottom" type="java.lang.Integer">
+            <column name="div_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divRight" type="java.lang.Integer">
+            <column name="div_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divHeight" type="java.lang.Integer">
+            <column name="div_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divWidth" type="java.lang.Integer">
+            <column name="div_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="divDisplay" type="string">
+            <column name="div_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="divPosition" type="string">
+            <column name="div_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="divOverflow" type="string">
+            <column name="div_overflow" length="16" />
+        </property>
+        <property name="divLayer" type="java.lang.Integer">
+            <column name="div_layer" />
+        </property>
+        <property name="divPaddingTop" type="java.lang.Integer">
+            <column name="div_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="divPaddingRight" type="java.lang.Integer">
+            <column name="div_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="divPaddingBottom" type="java.lang.Integer">
+            <column name="div_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="divPaddingLeft" type="java.lang.Integer">
+            <column name="div_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

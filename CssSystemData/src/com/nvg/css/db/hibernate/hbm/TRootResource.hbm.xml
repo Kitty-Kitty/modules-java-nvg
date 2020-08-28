@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TRootResource" table="t_root_resource" catalog="css_center">
+        <id name="rrsId" type="string">
+            <column name="rrs_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TSystem" class="com.nvg.css.db.domain.TSystem" fetch="select">
+            <column name="sys_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TServer" class="com.nvg.css.db.domain.TServer" fetch="select">
+            <column name="svr_id" length="128" />
+        </many-to-one>
+        <property name="rrsType" type="java.lang.Integer">
+            <column name="rrs_type">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsParent" type="string">
+            <column name="rrs_parent" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsName" type="string">
+            <column name="rrs_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsShowName" type="string">
+            <column name="rrs_show_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsIp" type="string">
+            <column name="rrs_ip" length="32">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9IP</comment>
+            </column>
+        </property>
+        <property name="rrsAddr" type="string">
+            <column name="rrs_addr" length="1024">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsStatus" type="java.lang.Integer">
+            <column name="rrs_status">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsFps" type="java.lang.Integer">
+            <column name="rrs_fps">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="rrsBps" type="java.lang.Integer">
+            <column name="rrs_bps">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <set name="TResources" table="t_resource" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="rrs_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TResource" />
+        </set>
+    </class>
+</hibernate-mapping>

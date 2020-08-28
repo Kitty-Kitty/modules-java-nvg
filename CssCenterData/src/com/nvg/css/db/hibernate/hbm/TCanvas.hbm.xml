@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TCanvas" table="t_canvas" catalog="css_center">
+        <id name="cvId" type="string">
+            <column name="cv_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <property name="cvName" type="string">
+            <column name="cv_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvIndex" type="java.lang.Integer">
+            <column name="cv_index" />
+        </property>
+        <property name="cvColumns" type="java.lang.Integer">
+            <column name="cv_columns" />
+        </property>
+        <property name="cvRows" type="java.lang.Integer">
+            <column name="cv_rows" />
+        </property>
+        <property name="cvTop" type="java.lang.Integer">
+            <column name="cv_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvLeft" type="java.lang.Integer">
+            <column name="cv_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvBottom" type="java.lang.Integer">
+            <column name="cv_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvRight" type="java.lang.Integer">
+            <column name="cv_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvHeight" type="java.lang.Integer">
+            <column name="cv_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvWidth" type="java.lang.Integer">
+            <column name="cv_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="cvDisplay" type="string">
+            <column name="cv_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="cvPosition" type="string">
+            <column name="cv_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="cvOverflow" type="string">
+            <column name="cv_overflow" length="16" />
+        </property>
+        <property name="cvLayer" type="java.lang.Integer">
+            <column name="cv_layer" />
+        </property>
+        <property name="cvPaddingTop" type="java.lang.Integer">
+            <column name="cv_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="cvPaddingRight" type="java.lang.Integer">
+            <column name="cv_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="cvPaddingBottom" type="java.lang.Integer">
+            <column name="cv_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="cvPaddingLeft" type="java.lang.Integer">
+            <column name="cv_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:JavaTransformation50="http:///schemas/JavaTransformation50/_znHmkE3YEd-tPpJR7OP4Bg/34" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/JavaTransformation50/_znHmkE3YEd-tPpJR7OP4Bg/34 pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_znahgE3YEd-tPpJR7OP4Bg?JavaTransformation5.0/JavaTransformation50?">
+  <uml:Package xmi:id="_pcCBEN3UEeWeupOC4RugTw" name="MinaModel">
+    <packageImport xmi:id="_pcetAN3UEeWeupOC4RugTw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_pcoeAN3UEeWeupOC4RugTw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pfWa0t3UEeWeupOC4RugTw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_pfWa093UEeWeupOC4RugTw" name="nvg">
+        <packagedElement xmi:type="uml:Package" xmi:id="_pfWa1N3UEeWeupOC4RugTw" name="mina">
+          <packagedElement xmi:type="uml:Package" xmi:id="_pfWa1d3UEeWeupOC4RugTw" name="core">
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfWa1t3UEeWeupOC4RugTw" name="NvgMinaServerLogger">
+              <ownedComment xmi:id="_pfWa193UEeWeupOC4RugTw" annotatedElement="_pfWa1t3UEeWeupOC4RugTw">
+                <body>@ClassName:&amp;nbsp;GmpMinaServerLogger&amp;nbsp;&lt;br>@Description:&amp;nbsp;TODO&lt;br>@author:&amp;nbsp;kitty&lt;br>@date:&amp;nbsp;2016骞��鏃�&amp;nbsp;涓嬪崍9:07:44&amp;nbsp;&amp;nbsp;</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_pfpVwN3UEeWeupOC4RugTw" name="log" visibility="private" isStatic="true">
+                <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.commons.logging.Log%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_pfpVwd3UEeWeupOC4RugTw">
+                  <language></language>
+                  <body>LogFactory.getLog(NvgMinaServerLogger.class)</body>
+                </defaultValue>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_pfpVwt3UEeWeupOC4RugTw" name="fatal" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pfpVw93UEeWeupOC4RugTw" annotatedElement="_pfpVwt3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;fatal&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpVxd3UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfpVxt3UEeWeupOC4RugTw" name="fatal" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pfpVx93UEeWeupOC4RugTw" annotatedElement="_pfpVxt3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;fatal&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpVyd3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pfpVyt3UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfpVy93UEeWeupOC4RugTw" name="error" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pfpVzN3UEeWeupOC4RugTw" annotatedElement="_pfpVy93UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;error&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpVzt3UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfpVz93UEeWeupOC4RugTw" name="error" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pfpV0N3UEeWeupOC4RugTw" annotatedElement="_pfpVz93UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;error&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpV0t3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pfpV093UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfpV1N3UEeWeupOC4RugTw" name="warn" visibility="package">
+                <ownedComment xmi:id="_pfpV1d3UEeWeupOC4RugTw" annotatedElement="_pfpV1N3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;warn&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpV193UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfpV2N3UEeWeupOC4RugTw" name="warn" visibility="package">
+                <ownedComment xmi:id="_pfpV2d3UEeWeupOC4RugTw" annotatedElement="_pfpV2N3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;warn&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pfpV293UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pfzGwN3UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pfzGwd3UEeWeupOC4RugTw" name="info" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pfzt0N3UEeWeupOC4RugTw" annotatedElement="_pfzGwd3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;info&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf0U4N3UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf0U4d3UEeWeupOC4RugTw" name="info" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pf078N3UEeWeupOC4RugTw" annotatedElement="_pf0U4d3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;info&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf1jAN3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pf1jAd3UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2KEN3UEeWeupOC4RugTw" name="debug" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pf2KEd3UEeWeupOC4RugTw" annotatedElement="_pf2KEN3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;debug&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf2xId3UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2xIt3UEeWeupOC4RugTw" name="debug" visibility="package" isStatic="true">
+                <ownedComment xmi:id="_pf2xI93UEeWeupOC4RugTw" annotatedElement="_pf2xIt3UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;debug&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf2xJd3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pf2xJt3UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2xJ93UEeWeupOC4RugTw" name="trace" visibility="package">
+                <ownedComment xmi:id="_pf2xKN3UEeWeupOC4RugTw" annotatedElement="_pf2xJ93UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;a&amp;nbsp;message&amp;nbsp;with&amp;nbsp;trace&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf2xKt3UEeWeupOC4RugTw" name="message"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2xK93UEeWeupOC4RugTw" name="trace" visibility="package">
+                <ownedComment xmi:id="_pf2xLN3UEeWeupOC4RugTw" annotatedElement="_pf2xK93UEeWeupOC4RugTw">
+                  <body>Logs&amp;nbsp;an&amp;nbsp;error&amp;nbsp;with&amp;nbsp;trace&amp;nbsp;log&amp;nbsp;level.&lt;br>&lt;br>@param&amp;nbsp;message&amp;nbsp;log&amp;nbsp;this&amp;nbsp;message&lt;br>@param&amp;nbsp;t&amp;nbsp;log&amp;nbsp;this&amp;nbsp;cause</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_pf2xLt3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pf2xL93UEeWeupOC4RugTw" name="t">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfWa2d3UEeWeupOC4RugTw" name="NvgMinaServerIoHandler" clientDependency="_pgKTIN3UEeWeupOC4RugTw">
+              <ownedComment xmi:id="_pfWa2t3UEeWeupOC4RugTw" annotatedElement="_pfWa2d3UEeWeupOC4RugTw">
+                <body>Created&amp;nbsp;by&amp;nbsp;Loftor&amp;nbsp;on&amp;nbsp;2014/8/15.</body>
+              </ownedComment>
+              <interfaceRealization xmi:id="_pgKTIN3UEeWeupOC4RugTw" client="_pfWa2d3UEeWeupOC4RugTw">
+                <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.service.IoHandler%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                <contract href="mmi:///#jbintype%5Ename=org.apache.mina.core.service.IoHandler%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+              </interfaceRealization>
+              <ownedOperation xmi:id="_pf2xMN3UEeWeupOC4RugTw" name="exceptionCaught" visibility="public">
+                <ownedParameter xmi:id="_pf2xMd3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pf2xMt3UEeWeupOC4RugTw" name="arg1">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Throwable%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2xM93UEeWeupOC4RugTw" name="messageReceived" visibility="public">
+                <ownedParameter xmi:id="_pf2xNN3UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pf2xNd3UEeWeupOC4RugTw" name="message"/>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pf2xNt3UEeWeupOC4RugTw" name="messageSent" visibility="public">
+                <ownedParameter xmi:id="_pgAiIN3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgAiId3UEeWeupOC4RugTw" name="arg1"/>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgAiIt3UEeWeupOC4RugTw" name="sessionClosed" visibility="public">
+                <ownedParameter xmi:id="_pgAiI93UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgAiJN3UEeWeupOC4RugTw" name="sessionCreated" visibility="public">
+                <ownedParameter xmi:id="_pgAiJd3UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgAiJt3UEeWeupOC4RugTw" name="sessionIdle" visibility="public">
+                <ownedParameter xmi:id="_pgAiJ93UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgAiKN3UEeWeupOC4RugTw" name="status">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IdleStatus%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgAiKd3UEeWeupOC4RugTw" name="sessionOpened" visibility="public">
+                <ownedParameter xmi:id="_pgAiKt3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_pfWa6N3UEeWeupOC4RugTw" name="conf">
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfWa6d3UEeWeupOC4RugTw" name="NvgMinaConfigure">
+              <ownedComment xmi:id="_pfWa6t3UEeWeupOC4RugTw" annotatedElement="_pfWa6d3UEeWeupOC4RugTw">
+                <body>&lt;p>ClassName: MinaConfigure &lt;br>@Description: TODO&lt;br>@author: kitty fangzhenmu@novigo.com.cn&lt;br>@date: 2016骞��鏃� 涓嬪崍9:58:58 &lt;br>&lt;/p></body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_pgKTId3UEeWeupOC4RugTw" name="port" visibility="package">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_pgKTIt3UEeWeupOC4RugTw" value="9123"/>
+              </ownedAttribute>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_pfWa7N3UEeWeupOC4RugTw" name="test">
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfWa7d3UEeWeupOC4RugTw" name="NvgMinaServer">
+              <ownedComment xmi:id="_pfWa7t3UEeWeupOC4RugTw" annotatedElement="_pfWa7d3UEeWeupOC4RugTw">
+                <body>Created&amp;nbsp;by&amp;nbsp;Loftor&amp;nbsp;on&amp;nbsp;2014/8/15.</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_pgKTI93UEeWeupOC4RugTw" name="mc" visibility="private" isLeaf="true" isStatic="true" type="_pfWa6d3UEeWeupOC4RugTw">
+                <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_pgKTJN3UEeWeupOC4RugTw">
+                  <language></language>
+                  <body>new NvgMinaConfigure()</body>
+                </defaultValue>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_pgKTJd3UEeWeupOC4RugTw" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_pgKTJt3UEeWeupOC4RugTw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pgKTJ93UEeWeupOC4RugTw" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pgKTKN3UEeWeupOC4RugTw"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.io.IOException%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_pfWa8N3UEeWeupOC4RugTw" name="decoder">
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfWa8d3UEeWeupOC4RugTw" name="NvgBaseProtocolCodecFactory" clientDependency="_pgTdEN3UEeWeupOC4RugTw">
+              <interfaceRealization xmi:id="_pgTdEN3UEeWeupOC4RugTw" client="_pfWa8d3UEeWeupOC4RugTw">
+                <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolCodecFactory%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                <contract href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolCodecFactory%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+              </interfaceRealization>
+              <ownedOperation xmi:id="_pgKTLN3UEeWeupOC4RugTw" name="getDecoder" visibility="public">
+                <ownedParameter xmi:id="_pgKTLd3UEeWeupOC4RugTw" name="ReturnParameter" direction="return">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolDecoder%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgKTLt3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgKTL93UEeWeupOC4RugTw" name="getEncoder" visibility="public">
+                <ownedParameter xmi:id="_pgKTMN3UEeWeupOC4RugTw" name="ReturnParameter" direction="return">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolEncoder%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgKTMd3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfgL5N3UEeWeupOC4RugTw" name="NvgBaseEncoder" clientDependency="_pgTdF93UEeWeupOC4RugTw">
+              <interfaceRealization xmi:id="_pgTdF93UEeWeupOC4RugTw" client="_pfgL5N3UEeWeupOC4RugTw">
+                <supplier xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolEncoder%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                <contract href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolEncoder%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+              </interfaceRealization>
+              <ownedOperation xmi:id="_pgTdEd3UEeWeupOC4RugTw" name="dispose" visibility="public">
+                <ownedParameter xmi:id="_pgTdEt3UEeWeupOC4RugTw" name="arg0">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_pgTdE93UEeWeupOC4RugTw" name="encode" visibility="public">
+                <ownedParameter xmi:id="_pgTdFN3UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgTdFd3UEeWeupOC4RugTw" name="message"/>
+                <ownedParameter xmi:id="_pgTdFt3UEeWeupOC4RugTw" name="output">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolEncoderOutput%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_pfgL5d3UEeWeupOC4RugTw" name="NvgBaseDecoder">
+              <ownedComment xmi:id="_pfgL5t3UEeWeupOC4RugTw" annotatedElement="_pfgL5d3UEeWeupOC4RugTw">
+                <body>@ClassName:&amp;nbsp;NvgBaseDecoder&amp;nbsp;&lt;br>@Description:&amp;nbsp;TODO&lt;br>@author:&amp;nbsp;kitty&amp;nbsp;fangzhenmu@novigo.com.cn&lt;br>@date:&amp;nbsp;2016骞��鏃�&amp;nbsp;涓嬪崍7:33:10&amp;nbsp;&lt;br></body>
+              </ownedComment>
+              <generalization xmi:id="_pgTdHd3UEeWeupOC4RugTw">
+                <general xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.CumulativeProtocolDecoder%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </generalization>
+              <ownedOperation xmi:id="_pgTdGN3UEeWeupOC4RugTw" name="doDecode" visibility="public">
+                <ownedParameter xmi:id="_pgTdGd3UEeWeupOC4RugTw" name="ReturnParameter" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgTdGt3UEeWeupOC4RugTw" name="session">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.core.session.IoSession%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgTdG93UEeWeupOC4RugTw" name="in">
+                  <type xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=org.apache.mina.core.buffer.IoBuffer%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_pgTdHN3UEeWeupOC4RugTw" name="output">
+                  <type xmi:type="uml:Interface" href="mmi:///#jbintype%5Ename=org.apache.mina.filter.codec.ProtocolDecoderOutput%5Bproject%5Eid=Mina4Gmp%5D$uml.Interface"/>
+                </ownedParameter>
+                <raisedException xmi:type="uml:Class" href="mmi:///#jbintype%5Ename=java.lang.Exception%5Bproject%5Eid=Mina4Gmp%5D$uml.Class"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_pcCBEd3UEeWeupOC4RugTw">
+      <eAnnotations xmi:id="_pcCBEt3UEeWeupOC4RugTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_pcCBE93UEeWeupOC4RugTw">
+      <eAnnotations xmi:id="_pcCBFN3UEeWeupOC4RugTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_pcCBFd3UEeWeupOC4RugTw">
+      <eAnnotations xmi:id="_pcCBFt3UEeWeupOC4RugTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_pgKTKd3UEeWeupOC4RugTw">
+      <eAnnotations xmi:id="_pgKTKt3UEeWeupOC4RugTw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_znahgE3YEd-tPpJR7OP4Bg?JavaTransformation5.0/JavaTransformation50?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_TQfqgOcaEdi4LptNXGi2fQ?JavaTransformation5.0?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_pfWa2N3UEeWeupOC4RugTw" base_Comment="_pfWa193UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfWa293UEeWeupOC4RugTw" base_Comment="_pfWa2t3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfWa693UEeWeupOC4RugTw" base_Comment="_pfWa6t3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfWa793UEeWeupOC4RugTw" base_Comment="_pfWa7t3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfgL593UEeWeupOC4RugTw" base_Comment="_pfgL5t3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpVxN3UEeWeupOC4RugTw" base_Comment="_pfpVw93UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpVyN3UEeWeupOC4RugTw" base_Comment="_pfpVx93UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpVzd3UEeWeupOC4RugTw" base_Comment="_pfpVzN3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpV0d3UEeWeupOC4RugTw" base_Comment="_pfpV0N3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpV1t3UEeWeupOC4RugTw" base_Comment="_pfpV1d3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfpV2t3UEeWeupOC4RugTw" base_Comment="_pfpV2d3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pfzt0d3UEeWeupOC4RugTw" base_Comment="_pfzt0N3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pf078d3UEeWeupOC4RugTw" base_Comment="_pf078N3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pf2xIN3UEeWeupOC4RugTw" base_Comment="_pf2KEd3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pf2xJN3UEeWeupOC4RugTw" base_Comment="_pf2xI93UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pf2xKd3UEeWeupOC4RugTw" base_Comment="_pf2xKN3UEeWeupOC4RugTw"/>
+  <Default:Documentation xmi:id="_pf2xLd3UEeWeupOC4RugTw" base_Comment="_pf2xLN3UEeWeupOC4RugTw"/>
+  <JavaTransformation50:JavaArray xmi:id="_pgKTK93UEeWeupOC4RugTw" base_TypedElement="_pgKTJt3UEeWeupOC4RugTw"/>
+</xmi:XMI>

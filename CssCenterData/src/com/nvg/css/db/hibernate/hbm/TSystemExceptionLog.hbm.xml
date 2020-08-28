@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TSystemExceptionLog" table="t_system_exception_log" catalog="css_center">
+        <id name="seIndex" type="java.lang.Integer">
+            <column name="se_index" />
+            <generator class="identity" />
+        </id>
+        <property name="seTime" type="timestamp">
+            <column name="se_time" length="19" />
+        </property>
+        <property name="seType" type="java.lang.Integer">
+            <column name="se_type" />
+        </property>
+        <property name="seLevel" type="string">
+            <column name="se_level" length="16" />
+        </property>
+        <property name="seComment" type="string">
+            <column name="se_comment" length="256" />
+        </property>
+    </class>
+</hibernate-mapping>

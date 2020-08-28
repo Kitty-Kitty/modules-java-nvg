@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="t_background"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_background_play"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_background_schedule"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_canvas" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_controller"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_device_type"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_division" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_font_background"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_font_resource"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_gateway" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_group" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_monitor" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_re_group_permission"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_re_group_server"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_re_play_permission"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_re_resource_permission"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_re_usrg_permission"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_re_vedio_schedule_permission"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_resource" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_root_resource"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_server" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_system" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_system_exception_log"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_system_log"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_template" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_user" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_user_group"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_user_log" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_version" match-catalog="css_center"></table-filter>
+	<table-filter match-name="t_video_play"
+		match-catalog="css_center">
+	</table-filter>
+	<table-filter match-name="t_video_schedule"
+		match-catalog="css_center">
+	</table-filter>
+</hibernate-reverse-engineering>

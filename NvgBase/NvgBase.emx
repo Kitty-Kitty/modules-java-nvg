@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.3/Umlnotation" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+  <uml:Package xmi:id="_GXpLsIYREeay2-65tlVlwg" name="NvgBase">
+    <eAnnotations xmi:id="_GXpywIYREeay2-65tlVlwg" source="uml2.diagrams" references="_GXpywYYREeay2-65tlVlwg">
+      <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_GXpywYYREeay2-65tlVlwg" type="Freeform" name="Main">
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_KYdVwIYREeay2-65tlVlwg" element="_KWp-8IYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_KYfK8IYREeay2-65tlVlwg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_KYfK8YYREeay2-65tlVlwg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KYfK8oYREeay2-65tlVlwg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KYgZEIYREeay2-65tlVlwg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_KYgZEYYREeay2-65tlVlwg" type="Parent"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_KYhAIIYREeay2-65tlVlwg" type="PackageContents" collapsed="true" canonical="false"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KYdVwYYREeay2-65tlVlwg" x="4153" y="4603"/>
+        </children>
+        <children xmi:type="umlnotation:UMLShape" xmi:id="_UkTesIYREeay2-65tlVlwg" element="_UkQbYIYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+          <children xmi:type="notation:DecorationNode" xmi:id="_UkUFwIYREeay2-65tlVlwg" type="ImageCompartment">
+            <layoutConstraint xmi:type="notation:Size" xmi:id="_UkUFwYYREeay2-65tlVlwg" width="1320" height="1320"/>
+          </children>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_UkUFwoYREeay2-65tlVlwg" type="Stereotype"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_UkUFw4YREeay2-65tlVlwg" type="Name"/>
+          <children xmi:type="notation:BasicDecorationNode" xmi:id="_UkUFxIYREeay2-65tlVlwg" type="Parent"/>
+          <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_UkUFxYYREeay2-65tlVlwg" type="PackageContents" collapsed="true" canonical="false"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UkTesYYREeay2-65tlVlwg" x="4092" y="1188"/>
+        </children>
+      </contents>
+    </eAnnotations>
+    <packageImport xmi:id="_GXpywoYREeay2-65tlVlwg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_KWp-8IYREeay2-65tlVlwg" name="com.nvg.base.noshi">
+      <eAnnotations xmi:id="_KXiIsIYREeay2-65tlVlwg" source="uml2.diagrams" references="_KXiIsYYREeay2-65tlVlwg">
+        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_KXiIsYYREeay2-65tlVlwg" type="Freeform" name="Main">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_PbcugIYREeay2-65tlVlwg" element="_PbZEIIYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_PbdVkIYREeay2-65tlVlwg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_PbdVkYYREeay2-65tlVlwg" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Pbd8oIYREeay2-65tlVlwg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Pbd8oYYREeay2-65tlVlwg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_Pbd8ooYREeay2-65tlVlwg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_PbejsIYREeay2-65tlVlwg" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_PbejsYYREeay2-65tlVlwg" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_PbfKwIYREeay2-65tlVlwg" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_PbfKwYYREeay2-65tlVlwg" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PbcugYYREeay2-65tlVlwg" x="4752" y="3828"/>
+          </children>
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_ctUNMIYREeay2-65tlVlwg" element="_X-twEIYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_ctU0QIYREeay2-65tlVlwg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_ctU0QYYREeay2-65tlVlwg" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_ctVbUIYREeay2-65tlVlwg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_ctVbUYYREeay2-65tlVlwg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_ctWCYIYREeay2-65tlVlwg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_ctWCYYYREeay2-65tlVlwg" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_ctWCYoYREeay2-65tlVlwg" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_ctWpcIYREeay2-65tlVlwg" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_ctWpcYYREeay2-65tlVlwg" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ctUNMYYREeay2-65tlVlwg" x="6336" y="1452"/>
+          </children>
+          <children xmi:type="umlnotation:UMLClassifierShape" xmi:id="_kYWNIIY7Eeay2-65tlVlwg" element="_kYSiwIY7Eeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label" useClassifierShape="true">
+            <children xmi:type="notation:DecorationNode" xmi:id="_kYW0MIY7Eeay2-65tlVlwg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_kYW0MYY7Eeay2-65tlVlwg" width="530" height="530"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_kYW0MoY7Eeay2-65tlVlwg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_kYXbQIY7Eeay2-65tlVlwg" type="Kind"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_kYXbQYY7Eeay2-65tlVlwg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_kYXbQoY7Eeay2-65tlVlwg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_kYXbQ4Y7Eeay2-65tlVlwg" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_kYYCUIY7Eeay2-65tlVlwg" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_kYYCUYY7Eeay2-65tlVlwg" visible="false" type="SignalCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kYWNIYY7Eeay2-65tlVlwg" x="14710" y="3889"/>
+          </children>
+          <element xsi:nil="true"/>
+          <edges xmi:type="umlnotation:UMLConnector" xmi:id="_dr8_sIYREeay2-65tlVlwg" element="_drwycIYREeay2-65tlVlwg" source="_PbcugIYREeay2-65tlVlwg" target="_ctUNMIYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" roundedBendpointsRadius="4" routing="Rectilinear" lineColor="8421504" lineWidth="1" showStereotype="Text">
+            <children xmi:type="notation:DecorationNode" xmi:id="_dr-N0IYREeay2-65tlVlwg" type="NameLabel">
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_dr-04IYREeay2-65tlVlwg" type="Stereotype"/>
+              <children xmi:type="notation:BasicDecorationNode" xmi:id="_dr-04YYREeay2-65tlVlwg" type="Name"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dr-N0YYREeay2-65tlVlwg" y="-186"/>
+            </children>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dr8_sYYREeay2-65tlVlwg" points="[8, -24, -32, 142]$[85, -190, 45, -24]"/>
+          </edges>
+        </contents>
+      </eAnnotations>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PbZEIIYREeay2-65tlVlwg" name="NBNativeHardwareInformation">
+        <generalization xmi:id="_drwycIYREeay2-65tlVlwg" general="_X-twEIYREeay2-65tlVlwg"/>
+        <ownedAttribute xmi:id="_NdM8UIYVEeay2-65tlVlwg" name="si" visibility="private">
+          <ownedComment xmi:id="_3VEDsIYYEeay2-65tlVlwg" annotatedElement="_NdM8UIYVEeay2-65tlVlwg">
+            <body>&lt;p>system information&lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="platform:/resource/OshiModels/Models.emx#_-8K70oYUEeay2-65tlVlwg?Models/oshi/SystemInfo?"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_HYS2wIYZEeay2-65tlVlwg">
+            <type xmi:type="uml:Class" href="platform:/resource/OshiModels/Models.emx#_-8K70oYUEeay2-65tlVlwg?Models/oshi/SystemInfo?"/>
+            <language></language>
+            <body>new SystemInfo()</body>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_kfVYAIYREeay2-65tlVlwg" name="getNativeMemoryUsedLoad">
+          <ownedComment xmi:id="_qkbRgIYSEeay2-65tlVlwg" annotatedElement="_kfVYAIYREeay2-65tlVlwg">
+            <body>&lt;p>get current memoty  load of native hardware information&lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_a5NV0IYSEeay2-65tlVlwg" name="Parameter1" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_BnNbMIYUEeay2-65tlVlwg" name="">
+              <language></language>
+              <body>0.0</body>
+            </defaultValue>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_3A9jUIYVEeay2-65tlVlwg" name="getOperatingSystemInformation">
+          <ownedComment xmi:id="_Rd6jQIYWEeay2-65tlVlwg" annotatedElement="_3A9jUIYVEeay2-65tlVlwg">
+            <body>&lt;p>get  string insformtion of operation system&lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_EKsZsIYWEeay2-65tlVlwg" name="Parameter1" direction="return">
+            <type xmi:type="uml:Class" href="pathmap://ROSE_LIBRARIES/RoseJavaDatatypes.emx#_Q6H0UgddEdm1Sa24K-Ukow?RoseJavaDatatypes/java/lang/String?"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_xTp_EIYREeay2-65tlVlwg" name="getNativeCpuUsedLoad">
+          <ownedComment xmi:id="_nBlc4IYSEeay2-65tlVlwg" annotatedElement="_xTp_EIYREeay2-65tlVlwg">
+            <body>&lt;p>get current cpu load of native hardware information&lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_WnHOgIYSEeay2-65tlVlwg" name="Parameter1" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_AVZ1EIYUEeay2-65tlVlwg" name="">
+              <language></language>
+              <body>0.0</body>
+            </defaultValue>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_2DJ0EIYREeay2-65tlVlwg" name="getNativeDiskUsedLoad">
+          <ownedComment xmi:id="_oum_YIYSEeay2-65tlVlwg" annotatedElement="_2DJ0EIYREeay2-65tlVlwg">
+            <body>&lt;p>get current disk  load of native hardware information&lt;/p></body>
+          </ownedComment>
+          <ownedParameter xmi:id="_ZNSmkIYSEeay2-65tlVlwg" name="Parameter1" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_BBs6YIYUEeay2-65tlVlwg" name="">
+              <language></language>
+              <body>0.0</body>
+            </defaultValue>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_kYSiwIY7Eeay2-65tlVlwg" name="NBNativeHardwareConst">
+        <ownedAttribute xmi:id="_mGFhUIY7Eeay2-65tlVlwg" name="NB_NATIVE_HARDWARE_CONST_CPU_LOAD_INTERVAL" visibility="private">
+          <ownedComment xmi:id="_xb-bgIY7Eeay2-65tlVlwg" annotatedElement="_mGFhUIY7Eeay2-65tlVlwg">
+            <body>&lt;p>get system load interval time&lt;/p></body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_uHvqoIY7Eeay2-65tlVlwg" value="200"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UkQbYIYREeay2-65tlVlwg" name="com.nvg.base.core">
+      <eAnnotations xmi:id="_UkRCcIYREeay2-65tlVlwg" source="uml2.diagrams" references="_UkRCcYYREeay2-65tlVlwg">
+        <contents xmi:type="umlnotation:UMLDiagram" xmi:id="_UkRCcYYREeay2-65tlVlwg" type="Freeform" name="Main">
+          <children xmi:type="umlnotation:UMLShape" xmi:id="_X-vlQIYREeay2-65tlVlwg" element="_X-twEIYREeay2-65tlVlwg" fontName="Microsoft YaHei UI" fontHeight="8" transparency="0" lineColor="14263149" lineWidth="1" showStereotype="Label">
+            <children xmi:type="notation:DecorationNode" xmi:id="_X-wMUIYREeay2-65tlVlwg" type="ImageCompartment">
+              <layoutConstraint xmi:type="notation:Size" xmi:id="_X-wMUYYREeay2-65tlVlwg" width="1320" height="1320"/>
+            </children>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_X-wMUoYREeay2-65tlVlwg" type="Stereotype"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_X-wzYIYREeay2-65tlVlwg" type="Name"/>
+            <children xmi:type="notation:BasicDecorationNode" xmi:id="_X-wzYYYREeay2-65tlVlwg" type="Parent"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_X-wzYoYREeay2-65tlVlwg" type="AttributeCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_X-wzY4YREeay2-65tlVlwg" type="OperationCompartment"/>
+            <children xmi:type="notation:SemanticListCompartment" xmi:id="_X-xacIYREeay2-65tlVlwg" visible="false" type="SignalCompartment"/>
+            <children xmi:type="umlnotation:UMLShapeCompartment" xmi:id="_X-xacYYREeay2-65tlVlwg" visible="false" type="StructureCompartment"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_X-vlQYYREeay2-65tlVlwg" x="6641" y="2513"/>
+          </children>
+          <element xsi:nil="true"/>
+        </contents>
+      </eAnnotations>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X-twEIYREeay2-65tlVlwg" name="NvgBaseCore"/>
+    </packagedElement>
+    <profileApplication xmi:id="_GXpyw4YREeay2-65tlVlwg">
+      <eAnnotations xmi:id="_GXpyxIYREeay2-65tlVlwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_GXpyxYYREeay2-65tlVlwg">
+      <eAnnotations xmi:id="_GXpyxoYREeay2-65tlVlwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_GXpyx4YREeay2-65tlVlwg">
+      <eAnnotations xmi:id="_GXpyyIYREeay2-65tlVlwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_zQCzQIYREeay2-65tlVlwg">
+      <eAnnotations xmi:id="_zQDaUIYREeay2-65tlVlwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://SPRINGCORE_PROFILE/SpringCore.epx#_88K5sHs-EeKdRJVjIazCOw?SpringCore/SpringCore?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://SPRINGCORE_PROFILE/SpringCore.epx#_8wFjMPr5EeCPcO1TZSyAPQ?SpringCore?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_nBpHQIYSEeay2-65tlVlwg" base_Comment="_nBlc4IYSEeay2-65tlVlwg"/>
+  <Default:Documentation xmi:id="_ouo0kIYSEeay2-65tlVlwg" base_Comment="_oum_YIYSEeay2-65tlVlwg"/>
+  <Default:Documentation xmi:id="_qkdGsIYSEeay2-65tlVlwg" base_Comment="_qkbRgIYSEeay2-65tlVlwg"/>
+  <Default:Documentation xmi:id="_Rd8YcIYWEeay2-65tlVlwg" base_Comment="_Rd6jQIYWEeay2-65tlVlwg"/>
+  <Default:Documentation xmi:id="_3VF44IYYEeay2-65tlVlwg" base_Comment="_3VEDsIYYEeay2-65tlVlwg"/>
+  <Default:Documentation xmi:id="_xcAQsIY7Eeay2-65tlVlwg" base_Comment="_xb-bgIY7Eeay2-65tlVlwg"/>
+</xmi:XMI>

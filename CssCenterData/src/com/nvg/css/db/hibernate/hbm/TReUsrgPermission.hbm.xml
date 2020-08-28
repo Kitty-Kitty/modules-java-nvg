@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TReUsrgPermission" table="t_re_usrg_permission" catalog="css_center">
+        <id name="rupId" type="java.lang.Integer">
+            <column name="rup_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TUser" class="com.nvg.css.db.domain.TUser" fetch="select">
+            <column name="usr_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TUserGroup" class="com.nvg.css.db.domain.TUserGroup" fetch="select">
+            <column name="usrg_id" length="128" />
+        </many-to-one>
+        <property name="usrgIsCreateGroup" type="java.lang.Boolean">
+            <column name="usrg_is_create_group" />
+        </property>
+        <property name="usrgIsRoot" type="java.lang.Boolean">
+            <column name="usrg_is_root" />
+        </property>
+        <property name="usrgIsCreateUsrg" type="java.lang.Boolean">
+            <column name="usrg_is_create_usrg" />
+        </property>
+        <property name="usrgIsDeleteUsrg" type="java.lang.Boolean">
+            <column name="usrg_is_delete_usrg" />
+        </property>
+        <property name="usrgIsQueryUsrg" type="java.lang.Boolean">
+            <column name="usrg_is_query_usrg" />
+        </property>
+        <property name="usrgIsUpdateUsrg" type="java.lang.Boolean">
+            <column name="usrg_is_update_usrg" />
+        </property>
+    </class>
+</hibernate-mapping>

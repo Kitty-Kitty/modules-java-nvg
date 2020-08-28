@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TReGroupServer" table="t_re_group_server" catalog="css_center">
+        <id name="rgsId" type="java.lang.Integer">
+            <column name="rgs_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TServer" class="com.nvg.css.db.domain.TServer" fetch="select">
+            <column name="svr_id" length="128" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

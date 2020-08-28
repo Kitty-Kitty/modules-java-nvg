@@ -1,0 +1,32 @@
+									
+Serializer Type Contrast									
+JAVA--Type	--->	GMF--GMDT							
+Name		Name	Title	Hex	Dec	Bytes	Value	Description	
+boolean(Boolean)	--->	Boolen	B	0x00	0	1B	0x00表示false	布尔类型数据	
+							0x01表示true		
+byte(Byte)	--->	Char	C	0x01	1	1B	-127~127	字符数据	
+---	--->	Unsigned Char	UC	0x02	2	1B	0~255	无符号字符数据	
+short(Short)	--->	Short	S	0x03	3	2B		有符号短整形数据	
+---	--->	Unsigned Short	US	0x04	4	2B		无符号短整形数据	
+int(Integer)	--->	Int	IN	0x05	5	4B		有符号整形	
+---	--->	Unsigned Int	UIN	0x06	6	4B		无符号整形	
+long(Long)	--->	Long	L	0x07	7	8B		有符号长整形	
+---	--->	Unsigned Long	UL	0x08	8	8B		无符号长整形	
+float(Float)	--->	Float	F	0x09	9	4B		有符号单精度浮点型	
+---	--->	Unsigned float	UF	0x0A	10	4B		无符号单精度浮点型	
+double(Double)	--->	Double	D	0x0B	11	8B		有符号双精度浮点型	
+---	--->	Unsigned Double	UD	0x0C	12	8B		无符号双精度浮点型	
+null	--->	Null	N	0x0D	13	0B		表示空数据类型	
+---	--->	Type	T	0x0E	14	1B		表示数据类型数据	
+									
+List / array	--->	Array	A	0x40	64	4B		表示数组类型数据	
+Map / Beans	--->	Object	O	0x41	65	4B		表示对象类型数据	
+---	--->	XML	X	0x42	66	4B		表示XML数据长度	
+---	--->	JSON	JS	0x43	67	4B		表示Json数据长度	
+byte[]	--->	IOBuffer	IOB	0x44	68	4B		表示保存一个缓存块大小	
+									
+String / StringBuffer / Character / char[]	--->	String	ST	0x80	128	4B		表示字符串数据类型	
+GmfRectBean / 4 Int(Integer)	--->	Rect	R	0x81	129	16B	"[(x1,y1),(x2,y2)]"	表示坐标位置数据	
+GmfRectPairBean / 8 Int(Integer)	--->	RectPair	RP	0x82	130	32B	"S[(x1,y1),(x2,y2)]"	表示一个坐标对，主要为传递矩形对时使用	
+							"D[(x1,y1),(x2,y2)]"		
+									

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.7.jar" sourcepath="D:/WorkSpace/java_lib/mina/apache-mina-2.0.13-src.zip"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.6.jar" sourcepath="D:/WorkSpace/log4j/slf4j-1.7.19.zip"/>
+	<classpathentry kind="lib" path="lib/spring-2.5.5.jar"/>
+	<classpathentry kind="lib" path="lib/gmp4j-0.1.0.jar" sourcepath="/Gmp4j"/>
+	<classpathentry kind="lib" path="lib/CssCenterCode-0.1.0.jar" sourcepath="/CssCenterCode"/>
+	<classpathentry kind="lib" path="lib/gmf4j-0.1.0.jar" sourcepath="/Gmf4j"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.6.jar" sourcepath="D:/WorkSpace/log4j/slf4j-1.7.19/slf4j-1.7.19/slf4j-log4j12-1.7.19-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

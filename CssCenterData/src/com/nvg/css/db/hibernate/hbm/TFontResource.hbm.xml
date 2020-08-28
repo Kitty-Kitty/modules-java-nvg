@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TFontResource" table="t_font_resource" catalog="css_center">
+        <id name="frId" type="string">
+            <column name="fr_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TServer" class="com.nvg.css.db.domain.TServer" fetch="select">
+            <column name="svr_id" length="128" />
+        </many-to-one>
+        <property name="frName" type="string">
+            <column name="fr_name" length="128" />
+        </property>
+        <property name="frType" type="java.lang.Integer">
+            <column name="fr_type" />
+        </property>
+        <property name="frAddr" type="string">
+            <column name="fr_addr" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

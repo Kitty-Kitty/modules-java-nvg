@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+
+	<table-filter match-catalog="css_system" match-name="t_background" />
+	<table-filter match-catalog="css_system"
+		match-name="t_background_play" />
+	<table-filter match-catalog="css_system"
+		match-name="t_background_schedule" />
+	<table-filter match-catalog="css_system" match-name="t_canvas" />
+	<table-filter match-catalog="css_system" match-name="t_controller" />
+	<table-filter match-catalog="css_system" match-name="t_device_type" />
+	<table-filter match-catalog="css_system" match-name="t_division" />
+	<table-filter match-catalog="css_system"
+		match-name="t_font_background" />
+	<table-filter match-catalog="css_system"
+		match-name="t_font_resource" />
+	<table-filter match-catalog="css_system" match-name="t_gateway" />
+	<table-filter match-catalog="css_system" match-name="t_group" />
+	<table-filter match-catalog="css_system" match-name="t_monitor" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_group_server" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_play_permission" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_resource_permission" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_usrg_permission" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_vedio_board_permission" />
+	<table-filter match-catalog="css_system"
+		match-name="t_re_vedio_schedule_permission" />
+	<table-filter match-catalog="css_system" match-name="t_resource" />
+	<table-filter match-catalog="css_system" match-name="t_server" />
+	<table-filter match-catalog="css_system" match-name="t_system" />
+	<table-filter match-catalog="css_system"
+		match-name="t_system_exception_log" />
+	<table-filter match-catalog="css_system" match-name="t_system_log" />
+	<table-filter match-catalog="css_system" match-name="t_template" />
+	<table-filter match-catalog="css_system" match-name="t_user_group" />
+	<table-filter match-catalog="css_system" match-name="t_user_log" />
+	<table-filter match-catalog="css_system" match-name="t_version" />
+	<table-filter match-catalog="css_system" match-name="t_video_board" />
+	<table-filter match-catalog="css_system" match-name="t_video_play" />
+	<table-filter match-catalog="css_system"
+		match-name="t_video_schedule" />
+	<table-filter match-name="t_user" match-catalog="css_system"></table-filter>
+	<table-filter match-name="t_re_group_permission"
+		match-catalog="css_system">
+	</table-filter>
+	<table catalog="css_system" name="t_resource" class="CssResource">
+		<column name="rs_id" property="id"></column>
+		<column name="sys_id"></column>
+		<column name="svr_id"></column>
+		<column name="rs_type" property="type"></column>
+		<column name="rs_parent" property="parent"></column>
+		<column name="rs_name" property="name"></column>
+		<column name="rs_showname" property="showname"></column>
+		<column name="rs_ip" property="ip"></column>
+		<column name="rs_addr" property="addr"></column>
+		<column name="rs_status" property="status"></column>
+		<column name="rs_fps" property="fps"></column>
+		<column name="rs_bps" property="bps"></column>
+	</table>
+	<table catalog="css_system" name="t_controller"
+		class="CssController">
+		<column name="ct_id" property="id"></column>
+		<column name="dt_type"></column>
+		<column name="mnt_id"></column>
+		<column name="sys_id"></column>
+		<column name="css_id"></column>
+		<column name="ct_name" property="name"></column>
+		<column name="ct_status" property="status"></column>
+		<column name="ct_ip" property="ip"></column>
+		<column name="ct_network" property="network"></column>
+		<column name="ct_mac" property="mac"></column>
+		<column name="ct_udp_port" property="udp_port"></column>
+		<column name="ct_tcp_port" property="tcp_port"></column>
+		<column name="ct_registtime" property="registtime"></column>
+		<column name="ct_version" property="version"></column>
+		<column name="ct_limit_play_count"
+			property="limit_play_count">
+		</column>
+		<column name="ct_limit_layer_count"
+			property="limit_layer_count">
+		</column>
+		<column name="ct_limit_disk" property="limit_disk"></column>
+		<column name="ct_limit_memory" property="limit_memory"></column>
+		<column name="ct_limit_cpu" property="limit_cpu"></column>
+		<column name="ct_limit_network" property="limit_network"></column>
+	</table>
+	<table catalog="css_system" name="t_canvas" class="CssCanvas">
+		<column name="cv_id" property="id"></column>
+		<column name="cv_name" property="name"></column>
+		<column name="gp_id"></column>
+		<column name="cv_index" property="index"></column>
+		<column name="cv_columns" property="columns"></column>
+		<column name="cv_rows" property="rows"></column>
+		<column name="cv_top" property="top"></column>
+		<column name="cv_left" property="left"></column>
+		<column name="cv_bottom" property="bottom"></column>
+		<column name="cv_right" property="right"></column>
+		<column name="cv_height" jdbc-type="height"></column>
+		<column name="cv_width" property="width"></column>
+		<column name="cv_display" property="display"></column>
+		<column name="cv_position" property="position"></column>
+		<column name="cv_overflow" property="overflow"></column>
+		<column name="cv_layer" property="layer"></column>
+		<column name="cv_padding_top" property="padding_top"></column>
+		<column name="cv_padding_right" property="padding_right"></column>
+		<column name="cv_padding_bottom" property="padding_bottom"></column>
+		<column name="cv_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_font_background" class="CssFontBackground">
+		<column name="fb_id" property="id"></column>
+		<column name="mnt_id"></column>
+		<column name="fb_type" property="type"></column>
+		<column name="fb_uri" property="uri"></column>
+		<column name="fb_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_video_board" class="CssVideoBoard">
+		<column name="vb_id" property="id"></column>
+		<column name="gp_id"></column>
+		<column name="tp_id"></column>
+		<column name="vb_name" property="name"></column>
+	</table>
+	<table catalog="css_system" name="t_monitor" class="CssMonitor">
+		<column name="mnt_id" property="id"></column>
+		<column name="mnt_name" property="name"></column>
+		<column name="gp_id"></column>
+		<column name="mnt_index" property="index"></column>
+		<column name="mnt_column" property="column"></column>
+		<column name="mnt_row" property="row"></column>
+		<column name="mnt_top" property="top"></column>
+		<column name="mnt_left" property="left"></column>
+		<column name="mnt_bottom" property="bottom"></column>
+		<column name="mnt_right" property="right"></column>
+		<column name="mnt_height" property="height"></column>
+		<column name="mnt_width" property="width"></column>
+		<column name="mnt_display" property="display"></column>
+		<column name="mnt_position" property="position"></column>
+		<column name="mnt_overflow" property="overflow"></column>
+		<column name="mnt_layer" property="layer"></column>
+		<column name="mnt_padding_top" property="padding_top"></column>
+		<column name="mnt_padding_right" property="padding_right"></column>
+		<column name="mnt_padding_bottom" property="padding_bottom"></column>
+		<column name="mnt_padding_left" property="padding_left"></column>
+		<column name="mnt_backcolor" property="backcolor"></column>
+		<column name="mnt_check_source_color"
+			property="check_source_color">
+		</column>
+		<column name="mnt_check_dest_color"
+			property="check_dest_color">
+		</column>
+		<column name="mnt_backsize_height" property="backsize_height"></column>
+		<column name="mnt_backsize_width" property="backsize_width"></column>
+		<column name="mnt_luminance" property="luminance"></column>
+		<column name="mnt_contrast" property="contrast"></column>
+		<column name="mnt_color_temperature"
+			property="color_temperature">
+		</column>
+		<column name="mnt_switch" property="switch"></column>
+	</table>
+	<table catalog="css_system" name="t_group" class="CssGroup">
+		<column name="gp_id" property="id"></column>
+		<column name="sys_id"></column>
+		<column name="gp_name" property="name"></column>
+		<column name="gp_index" property="index"></column>
+		<column name="gp_columns" property="columns"></column>
+		<column name="gp_rows" property="rows"></column>
+		<column name="gp_unit_height" property="unit_height"></column>
+		<column name="gp_unit_width" property="unit_width"></column>
+		<column name="gp_top" property="top"></column>
+		<column name="gp_left" property="left"></column>
+		<column name="gp_bottom" property="bottom"></column>
+		<column name="gp_right" property="right"></column>
+		<column name="gp_height" property="height"></column>
+		<column name="gp_width" property="width"></column>
+		<column name="gp_display" property="display"></column>
+		<column name="gp_position" property="position"></column>
+		<column name="gp_overflow" property="overflow"></column>
+		<column name="gp_layer" property="layer"></column>
+		<column name="gp_padding_top" property="padding_top"></column>
+		<column name="gp_padding_right" property="padding_right"></column>
+		<column name="gp_padding_bottom" property="padding_bottom"></column>
+		<column name="gp_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_device_type" class="CssDeviceType">
+		<column name="dt_type" property="type"></column>
+		<column name="dt_name" property="name"></column>
+		<column name="dt_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_background_play" class="CssBackgroundPlay">
+		<column name="bp_id" property="id"></column>
+		<column name="bp_name" property="name"></column>
+		<column name="bg_id"></column>
+		<column name="gp_id"></column>
+		<column name="bs_id"></column>
+		<column name="bp_index" property="index"></column>
+		<column name="bp_column" property="column"></column>
+		<column name="bp_row" property="row"></column>
+		<column name="bp_top" property="top"></column>
+		<column name="bp_left" property="left"></column>
+		<column name="bp_bottom" property="bottom"></column>
+		<column name="bp_right" property="right"></column>
+		<column name="bp_height" property="height"></column>
+		<column name="bp_width" property="width"></column>
+		<column name="bp_display" property="display"></column>
+		<column name="bp_position" property="position"></column>
+		<column name="bp_overflow" property="overflow"></column>
+		<column name="bp_layer" property="layer"></column>
+		<column name="bp_padding_top" property="padding_top"></column>
+		<column name="bp_padding_right" property="padding_right"></column>
+		<column name="bp_padding_bottom" property="padding_bottom"></column>
+		<column name="bp_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_user_log" class="CssUserLog">
+		<column name="ul_index" property="index"></column>
+		<column name="ul_time" property="time"></column>
+		<column name="ul_type" property="type"></column>
+		<column name="ul_level" property="level"></column>
+		<column name="ul_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_version" class="CssVersion">
+		<column name="ver_id" property="id"></column>
+		<column name="ver_name" property="name"></column>
+		<column name="ver_serial" property="serial"></column>
+	</table>
+	<table catalog="css_system" name="t_system" class="CssSystem">
+		<column name="sys_id" property="id"></column>
+		<column name="dt_type"></column>
+		<column name="gw_id"></column>
+		<column name="css_id"></column>
+		<column name="sys_name" property="name"></column>
+		<column name="sys_status" property="status"></column>
+		<column name="sys_ip" property="ip"></column>
+		<column name="sys_network" property="network"></column>
+		<column name="sys_mac" property="mac"></column>
+		<column name="sys_udp_port" property="udp_port"></column>
+		<column name="sys_tcp_port" property="tcp_port"></column>
+		<column name="sys_registtime" property="registtime"></column>
+		<column name="sys_version" property="version"></column>
+	</table>
+	<table catalog="css_system" name="t_user" class="CssUser">
+		<column name="usr_id" property="id"></column>
+		<column name="usg_id"></column>
+		<column name="usr_login" property="login"></column>
+		<column name="usr_password" property="password"></column>
+		<column name="usr_name" property="name"></column>
+		<column name="usr_type" property="type"></column>
+		<column name="master_id"></column>
+		<column name="usr_emial" property="emial"></column>
+		<column name="usr_phone" property="phone"></column>
+		<column name="usr_address" property="address"></column>
+		<column name="usr_isvalid" property="isvalid"></column>
+		<column name="usr_create_time" property="create_time"></column>
+		<column name="usr_bz" property="bz"></column>
+	</table>
+	<table catalog="css_system" name="t_gateway" class="CssGateway">
+		<column name="gw_id" property="id"></column>
+		<column name="gw_name" property="name"></column>
+		<column name="gw_status" property="status"></column>
+		<column name="gw_ip" property="ip"></column>
+		<column name="gw_network" property="network"></column>
+		<column name="gw_mac" property="mac"></column>
+		<column name="gw_tcp_port" property="tcp_port"></column>
+		<column name="gw_udp_port" property="udp_port"></column>
+		<column name="gw_registtime" property="registtime"></column>
+	</table>
+	<table catalog="css_system" name="t_user_group" class="CssUserGroup">
+		<column name="usg_id" property="id"></column>
+		<column name="usg_name" property="name"></column>
+		<column name="usg_description" property="description"></column>
+		<column name="usg_create_time" property="create_time"></column>
+	</table>
+	<table catalog="css_system" name="t_division" class="CssDivision">
+		<column name="div_id" property="id"></column>
+		<column name="div_name" property="name"></column>
+		<column name="tp_id"></column>
+		<column name="div_index" property="index"></column>
+		<column name="div_column" property="column"></column>
+		<column name="div_row" property="row"></column>
+		<column name="div_top" property="top"></column>
+		<column name="div_left" property="left"></column>
+		<column name="div_bottom" property="bottom"></column>
+		<column name="div_right" property="right"></column>
+		<column name="div_height" property="height"></column>
+		<column name="div_width" property="width"></column>
+		<column name="div_display" property="display"></column>
+		<column name="div_position" property="position"></column>
+		<column name="div_overflow" property="overflow"></column>
+		<column name="div_layer" property="layer"></column>
+		<column name="div_padding_top" property="padding_top"></column>
+		<column name="div_padding_right" property="padding_right"></column>
+		<column name="div_padding_bottom" property="padding_bottom"></column>
+		<column name="div_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_background" class="CssBackground">
+		<column name="bg_id" property="id"></column>
+		<column name="mnt_id"></column>
+		<column name="gp_id"></column>
+		<column name="bg_type" property="type"></column>
+		<column name="bg_uri" property="uri"></column>
+		<column name="bg_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_background_schedule" class="CssBackgroundSchedule">
+		<column name="bs_id" property="id"></column>
+		<column name="gp_id"></column>
+		<column name="bs_name" property="name"></column>
+		<column name="bs_index" property="index"></column>
+		<column name="bs_mode" property="mode"></column>
+		<column name="bs_timestamp" property="timestamp"></column>
+	</table>
+	<table catalog="css_system" name="t_video_play" class="CssVideoPlay">
+		<column name="vp_id" property="id"></column>
+		<column name="vp_name" property="name"></column>
+		<column name="gp_id"></column>
+		<column name="rs_id"></column>
+		<column name="vs_id"></column>
+		<column name="vb_id"></column>
+		<column name="vp_index" property="index"></column>
+		<column name="vp_channel" property="channel"></column>
+		<column name="vp_play_session" property="play_session"></column>
+		<column name="vp_multicast_ip" property="multicast_ip"></column>
+		<column name="vp_multicast_port" property="multicast_port"></column>
+		<column name="vp_column" property="column"></column>
+		<column name="vp_row" property="row"></column>
+		<column name="vp_top" property="top"></column>
+		<column name="vp_left" property="left"></column>
+		<column name="vp_bottom" property="bottom"></column>
+		<column name="vp_right" property="right"></column>
+		<column name="vp_height" property="height"></column>
+		<column name="vp_width" property="width"></column>
+		<column name="vp_display" property="display"></column>
+		<column name="vp_position" property="position"></column>
+		<column name="vp_overflow" property="overflow"></column>
+		<column name="vp_layer" property="layer"></column>
+		<column name="vp_padding_top" property="padding_top"></column>
+		<column name="vp_padding_right" property="padding_right"></column>
+		<column name="vp_padding_bottom" property="padding_bottom"></column>
+		<column name="vp_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_video_schedule" class="CssVideoSchedule">
+		<column name="vs_id" property="id"></column>
+		<column name="gp_id"></column>
+		<column name="tp_id"></column>
+		<column name="vs_name" property="name"></column>
+		<column name="vs_index" property="index"></column>
+		<column name="vs_mode" property="mode"></column>
+		<column name="vs_timestamp" property="timestamp"></column>
+	</table>
+	<table catalog="css_system" name="t_server" class="CssServer">
+		<column name="svr_id" property="id"></column>
+		<column name="dt_type"></column>
+		<column name="sys_id"></column>
+		<column name="css_id"></column>
+		<column name="svr_name" property="name"></column>
+		<column name="svr_status" property="status"></column>
+		<column name="svr_ip" property="ip"></column>
+		<column name="svr_network" property="network"></column>
+		<column name="svr_mac" property="mac"></column>
+		<column name="svr_udp_port" property="udp_port"></column>
+		<column name="svr_tcp_port" property="tcp_port"></column>
+		<column name="svr_registtime" property="registtime"></column>
+		<column name="svr_version" property="version"></column>
+		<column name="svr_limit_disk" property="limit_disk"></column>
+		<column name="svr_limit_memory" property="limit_memory"></column>
+		<column name="svr_limit_cpu" property="limit_cpu"></column>
+		<column name="svr_limit_network" property="limit_network"></column>
+	</table>
+	<table catalog="css_system" name="t_template" class="CssTemplate">
+		<column name="tp_id" property="id"></column>
+		<column name="tp_name" property="name"></column>
+		<column name="gp_id"></column>
+		<column name="cv_id"></column>
+		<column name="tp_index" property="index"></column>
+		<column name="tp_columns" property="columns"></column>
+		<column name="tp_rows" property="rows"></column>
+		<column name="tp_top" property="top"></column>
+		<column name="tp_left" property="left"></column>
+		<column name="tp_bottom" property="bottom"></column>
+		<column name="tp_right" property="right"></column>
+		<column name="tp_height" property="height"></column>
+		<column name="tp_width" property="width"></column>
+		<column name="tp_display" property="display"></column>
+		<column name="tp_position" property="position"></column>
+		<column name="tp_overflow" property="overflow"></column>
+		<column name="tp_layer" property="layer"></column>
+		<column name="tp_padding_top" property="padding_top"></column>
+		<column name="tp_padding_right" property="padding_right"></column>
+		<column name="tp_padding_bottom" property="padding_bottom"></column>
+		<column name="tp_padding_left" property="padding_left"></column>
+	</table>
+	<table catalog="css_system" name="t_re_group_server" class="CssReGroupServer">
+		<column name="gp_id"></column>
+		<column name="svr_id"></column>
+	</table>
+	<table catalog="css_system" name="t_system_exception_log" class="CssSystemExceptionLog">
+		<column name="se_index" property="index"></column>
+		<column name="se_time" property="time"></column>
+		<column name="se_type" property="type"></column>
+		<column name="se_level" property="level"></column>
+		<column name="se_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_system_log" class="CssSystemLog">
+		<column name="sl_index" property="index"></column>
+		<column name="sl_time" property="time"></column>
+		<column name="sl_type" property="type"></column>
+		<column name="sl_level" property="level"></column>
+		<column name="sl_comment" property="comment"></column>
+	</table>
+	<table catalog="css_system" name="t_font_resource" class="CssFontResource">
+		<column name="fr_id" property="id"></column>
+		<column name="svr_id"></column>
+		<column name="fr_name" property="name"></column>
+		<column name="fr_type" property="type"></column>
+		<column name="fr_addr" property="addr"></column>
+	</table>
+	<table catalog="css_system" name="t_re_usrg_permission" class="CssReUsrgPermission">
+		<column name="rup_id" property="id"></column>
+		<column name="usrg_id"></column>
+		<column name="usr_id"></column>
+		<column name="usrg_is_create_group"
+			property="is_create_group">
+		</column>
+		<column name="usrg_is_root" property="is_root"></column>
+		<column name="usrg_is_create_usrg" property="is_create_usrg"></column>
+		<column name="usrg_is_delete_usrg" property="is_delete_usrg"></column>
+		<column name="usrg_is_query_usrg" property="is_query_usrg"></column>
+		<column name="usrg_is_update_usrg" property="is_update_usrg"></column>
+	</table>
+	<table catalog="css_system" name="t_re_resource_permission" class="CssReResourcePermission">
+		<column name="rrp_id" property="id"></column>
+		<column name="usrg_id"></column>
+		<column name="usr_id"></column>
+		<column name="rs_id"></column>
+		<column name="urp_is_get" property="is_get"></column>
+		<column name="urp_is_set" property="is_set"></column>
+	</table>
+	<table catalog="css_system" name="t_re_group_permission" class="CssReGroupPermission">
+		<column name="rgp_id"></column>
+		<column name="gp_id"></column>
+		<column name="usrg_id"></column>
+		<column name="ugp_is_get" property="is_get"></column>
+		<column name="ugp_is_set" property="is_set"></column>
+		<column name="ugp_background" property="background"></column>
+		<column name="ugp_font" property="font"></column>
+	</table>
+	<table catalog="css_system" name="t_re_vedio_schedule_permission" class="CssReVedioSchedulePermission">
+		<column name="rvsp_id" property="id"></column>
+		<column name="usrg_id"></column>
+		<column name="usr_id"></column>
+		<column name="vs_id"></column>
+		<column name="uvsp_is_set" property="is_set"></column>
+		<column name="uvsp_is_get" property="is_get"></column>
+	</table>
+	<table catalog="css_system" name="t_re_vedio_board_permission" class="CssReVedioBoardPermission">
+		<column name="rvbp_id" property="id"></column>
+		<column name="vb_id"></column>
+		<column name="usr_id"></column>
+		<column name="usg_id"></column>
+		<column name="uvsp_is_set" property="is_set"></column>
+		<column name="uvsp_is_get" property="is_get"></column>
+	</table>
+	<table catalog="css_system" name="t_re_play_permission" class="CssRePlayPermission">
+		<column name="rpp_id" property="id"></column>
+		<column name="vp_id"></column>
+		<column name="usrg_id"></column>
+		<column name="usr_id"></column>
+	</table>
+</hibernate-reverse-engineering>

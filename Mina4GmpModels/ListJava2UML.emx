@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:JavaTransformation50="http:///schemas/JavaTransformation50/_znHmkE3YEd-tPpJR7OP4Bg/34" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default? http:///schemas/JavaTransformation50/_znHmkE3YEd-tPpJR7OP4Bg/34 pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_znahgE3YEd-tPpJR7OP4Bg?JavaTransformation5.0/JavaTransformation50?">
+  <uml:Package xmi:id="_BYWM0ODhEeWFm50iRLelgQ" name="ListJava2UML">
+    <packageImport xmi:id="_BYjBIuDhEeWFm50iRLelgQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_BYjoMODhEeWFm50iRLelgQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Bbkf8ODhEeWFm50iRLelgQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_BcBL4ODhEeWFm50iRLelgQ" name="gmf">
+        <packagedElement xmi:type="uml:Package" xmi:id="_BcBL4eDhEeWFm50iRLelgQ" name="core">
+          <packagedElement xmi:type="uml:Package" xmi:id="_BcBL4uDhEeWFm50iRLelgQ" name="beans">
+            <packagedElement xmi:type="uml:Class" xmi:id="_BcKV0ODhEeWFm50iRLelgQ" name="GmfRectPairBean">
+              <ownedComment xmi:id="_BchiMODhEeWFm50iRLelgQ" annotatedElement="_BcKV0ODhEeWFm50iRLelgQ">
+                <body>@ClassName:&amp;nbsp;GmfRectPairBean&lt;br>@Description:&amp;nbsp;rect&amp;nbsp;pair&amp;nbsp;bean&lt;br>@author:&amp;nbsp;kitty&lt;br>@date:&amp;nbsp;2016骞��鏃�&amp;nbsp;涓嬪崍4:35:20</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_BeFBYODhEeWFm50iRLelgQ" name="source" visibility="private" type="_BcrTNODhEeWFm50iRLelgQ">
+                <ownedComment xmi:id="_BevIsODhEeWFm50iRLelgQ" annotatedElement="_BeFBYODhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;source&lt;br>@fieldType:&amp;nbsp;GmfRectBean&lt;br>@Description:&amp;nbsp;source&amp;nbsp;rect&amp;nbsp;information</body>
+                </ownedComment>
+                <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_BeR1sODhEeWFm50iRLelgQ">
+                  <language></language>
+                  <body>new GmfRectBean()</body>
+                </defaultValue>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_BevIsuDhEeWFm50iRLelgQ" name="destination" visibility="private" type="_BcrTNODhEeWFm50iRLelgQ">
+                <ownedComment xmi:id="_BevItODhEeWFm50iRLelgQ" annotatedElement="_BevIsuDhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;destination&lt;br>@fieldType:&amp;nbsp;GmfRectBean&lt;br>@Description:&amp;nbsp;destination&amp;nbsp;rect&amp;nbsp;information</body>
+                </ownedComment>
+                <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_BevIs-DhEeWFm50iRLelgQ">
+                  <language></language>
+                  <body>new GmfRectBean()</body>
+                </defaultValue>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_BevItuDhEeWFm50iRLelgQ" name="toGmfString" visibility="public">
+                <ownedComment xmi:id="_BevIt-DhEeWFm50iRLelgQ" annotatedElement="_BevItuDhEeWFm50iRLelgQ">
+                  <body>@Title:&amp;nbsp;toGmfString&lt;br>@Description:&amp;nbsp;format&amp;nbsp;rect&amp;nbsp;pair&amp;nbsp;to&amp;nbsp;gmf&amp;nbsp;string&lt;br>@return&amp;nbsp;String&amp;nbsp;return&amp;nbsp;rect&amp;nbsp;pair&amp;nbsp;string</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_BevIueDhEeWFm50iRLelgQ" name="ReturnParameter" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_BcrTMeDhEeWFm50iRLelgQ" name="GmfList">
+              <ownedComment xmi:id="_BcrTMuDhEeWFm50iRLelgQ" annotatedElement="_BcrTMeDhEeWFm50iRLelgQ">
+                <body>@ClassName:&amp;nbsp;GmfList&amp;nbsp;&lt;br>@Description:&amp;nbsp;TODO&lt;br>@author:&amp;nbsp;kitty&amp;nbsp;fangzhenmu@novigo.com.cn&lt;br>@date:&amp;nbsp;Mar&amp;nbsp;1,&amp;nbsp;2016&amp;nbsp;7:03:15&amp;nbsp;PM&amp;nbsp;&lt;br></body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_Be45sODhEeWFm50iRLelgQ" name="list" visibility="private" isOrdered="true" isUnique="false">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Be45seDhEeWFm50iRLelgQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Be45suDhEeWFm50iRLelgQ"/>
+              </ownedAttribute>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_BcrTNODhEeWFm50iRLelgQ" name="GmfRectBean">
+              <ownedComment xmi:id="_BcrTNeDhEeWFm50iRLelgQ" annotatedElement="_BcrTNODhEeWFm50iRLelgQ">
+                <body>@ClassName:&amp;nbsp;GmfRectBean&lt;br>@Description:&amp;nbsp;TODO&lt;br>@author:&amp;nbsp;kitty&lt;br>@date:&amp;nbsp;2016骞��鏃�&amp;nbsp;涓嬪崍4:33:08</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_Bgp0Q-DhEeWFm50iRLelgQ" name="top" visibility="private">
+                <ownedComment xmi:id="_Bgp0ReDhEeWFm50iRLelgQ" annotatedElement="_Bgp0Q-DhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;top&lt;br>@fieldType:&amp;nbsp;int&lt;br>@Description:&amp;nbsp;rect&amp;nbsp;top</body>
+                </ownedComment>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Bgp0RODhEeWFm50iRLelgQ"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Bgy-MeDhEeWFm50iRLelgQ" name="left" visibility="private">
+                <ownedComment xmi:id="_Bgy-M-DhEeWFm50iRLelgQ" annotatedElement="_Bgy-MeDhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;left&lt;br>@fieldType:&amp;nbsp;int&lt;br>@Description:&amp;nbsp;rect&amp;nbsp;left</body>
+                </ownedComment>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Bgy-MuDhEeWFm50iRLelgQ"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Bgy-NeDhEeWFm50iRLelgQ" name="right" visibility="private">
+                <ownedComment xmi:id="_Bgy-N-DhEeWFm50iRLelgQ" annotatedElement="_Bgy-NeDhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;right&lt;br>@fieldType:&amp;nbsp;int&lt;br>@Description:&amp;nbsp;rect&amp;nbsp;right</body>
+                </ownedComment>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Bgy-NuDhEeWFm50iRLelgQ"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Bgy-OeDhEeWFm50iRLelgQ" name="bottom" visibility="private">
+                <ownedComment xmi:id="_Bgy-O-DhEeWFm50iRLelgQ" annotatedElement="_Bgy-OeDhEeWFm50iRLelgQ">
+                  <body>@fieldName:&amp;nbsp;bottom&lt;br>@fieldType:&amp;nbsp;int&lt;br>@Description:&amp;nbsp;rect&amp;nbsp;bottom</body>
+                </ownedComment>
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Bgy-OuDhEeWFm50iRLelgQ"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_Bgy-PeDhEeWFm50iRLelgQ" name="toGmfString" visibility="public">
+                <ownedComment xmi:id="_Bgy-PuDhEeWFm50iRLelgQ" annotatedElement="_Bgy-PeDhEeWFm50iRLelgQ">
+                  <body>@Title:&amp;nbsp;toGmfString&lt;br>@Description:&amp;nbsp;format&amp;nbsp;rect&amp;nbsp;data&amp;nbsp;to&amp;nbsp;gmf&amp;nbsp;string&lt;br>@return&amp;nbsp;String&amp;nbsp;return&amp;nbsp;rect&amp;nbsp;string</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_Bgy-QODhEeWFm50iRLelgQ" name="ReturnParameter" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Bd7QauDhEeWFm50iRLelgQ" name="MinaTcpHandle">
+      <ownedAttribute xmi:id="_Bg8vMODhEeWFm50iRLelgQ" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Bg8vMeDhEeWFm50iRLelgQ">
+          <language></language>
+          <body>new Integer(0)</body>
+        </defaultValue>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:id="_BYhL8ODhEeWFm50iRLelgQ">
+      <eAnnotations xmi:id="_BYhzAODhEeWFm50iRLelgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_BYiaEODhEeWFm50iRLelgQ">
+      <eAnnotations xmi:id="_BYiaEeDhEeWFm50iRLelgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_BYjBIODhEeWFm50iRLelgQ">
+      <eAnnotations xmi:id="_BYjBIeDhEeWFm50iRLelgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Bgp0QODhEeWFm50iRLelgQ">
+      <eAnnotations xmi:id="_Bgp0QeDhEeWFm50iRLelgQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_znahgE3YEd-tPpJR7OP4Bg?JavaTransformation5.0/JavaTransformation50?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://TRANSFORM_ANNOTATION_PROFILES/JavaTransformProfile.epx#_TQfqgOcaEdi4LptNXGi2fQ?JavaTransformation5.0?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_BcrTMODhEeWFm50iRLelgQ" base_Comment="_BchiMODhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_BcrTM-DhEeWFm50iRLelgQ" base_Comment="_BcrTMuDhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_BcrTNuDhEeWFm50iRLelgQ" base_Comment="_BcrTNeDhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_BevIseDhEeWFm50iRLelgQ" base_Comment="_BevIsODhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_BevIteDhEeWFm50iRLelgQ" base_Comment="_BevItODhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_BevIuODhEeWFm50iRLelgQ" base_Comment="_BevIt-DhEeWFm50iRLelgQ"/>
+  <JavaTransformation50:JavaCollection2 xmi:id="_Bgp0QuDhEeWFm50iRLelgQ" collectionType="java.util.List" base_TypedElement="_Be45sODhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_Bgy-MODhEeWFm50iRLelgQ" base_Comment="_Bgp0ReDhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_Bgy-NODhEeWFm50iRLelgQ" base_Comment="_Bgy-M-DhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_Bgy-OODhEeWFm50iRLelgQ" base_Comment="_Bgy-N-DhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_Bgy-PODhEeWFm50iRLelgQ" base_Comment="_Bgy-O-DhEeWFm50iRLelgQ"/>
+  <Default:Documentation xmi:id="_Bgy-P-DhEeWFm50iRLelgQ" base_Comment="_Bgy-PuDhEeWFm50iRLelgQ"/>
+</xmi:XMI>

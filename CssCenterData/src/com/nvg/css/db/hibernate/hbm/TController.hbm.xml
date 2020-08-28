@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TController" table="t_controller" catalog="css_center">
+        <id name="ctId" type="string">
+            <column name="ct_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TMonitor" class="com.nvg.css.db.domain.TMonitor" fetch="select">
+            <column name="mnt_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="TSystem" class="com.nvg.css.db.domain.TSystem" fetch="select">
+            <column name="sys_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TDeviceType" class="com.nvg.css.db.domain.TDeviceType" fetch="select">
+            <column name="dt_type" />
+        </many-to-one>
+        <property name="cssId" type="string">
+            <column name="css_id" length="128" />
+        </property>
+        <property name="ctName" type="string">
+            <column name="ct_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctStatus" type="java.lang.Integer">
+            <column name="ct_status">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctIp" type="string">
+            <column name="ct_ip" length="32">
+                <comment>&#129;0&#131;9&#129;0&#131;9IP</comment>
+            </column>
+        </property>
+        <property name="ctNetwork" type="string">
+            <column name="ct_network" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctMac" type="string">
+            <column name="ct_mac" length="64">
+                <comment>MAC&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctUdpPort" type="java.lang.Integer">
+            <column name="ct_udp_port">
+                <comment>udp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctTcpPort" type="java.lang.Integer">
+            <column name="ct_tcp_port">
+                <comment>tcp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctRegistTime" type="timestamp">
+            <column name="ct_regist_time" length="19">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctVersion" type="string">
+            <column name="ct_version" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitPlayCount" type="java.lang.Integer">
+            <column name="ct_limit_play_count">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitLayerCount" type="java.lang.Integer">
+            <column name="ct_limit_layer_count">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitDisk" type="java.lang.Integer">
+            <column name="ct_limit_disk">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitMemory" type="java.lang.Integer">
+            <column name="ct_limit_memory">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitCpu" type="java.lang.Integer">
+            <column name="ct_limit_cpu">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9CPU&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="ctLimitNetwork" type="java.lang.Integer">
+            <column name="ct_limit_network">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

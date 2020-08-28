@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TTemplate" table="t_template" catalog="css_center">
+        <id name="tpId" type="string">
+            <column name="tp_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TGroup" class="com.nvg.css.db.domain.TGroup" fetch="select">
+            <column name="gp_id" length="128" />
+        </many-to-one>
+        <property name="tpName" type="string">
+            <column name="tp_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpIndex" type="java.lang.Integer">
+            <column name="tp_index" />
+        </property>
+        <property name="tpColumns" type="java.lang.Integer">
+            <column name="tp_columns" />
+        </property>
+        <property name="tpRows" type="java.lang.Integer">
+            <column name="tp_rows" />
+        </property>
+        <property name="tpTop" type="java.lang.Integer">
+            <column name="tp_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpLeft" type="java.lang.Integer">
+            <column name="tp_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpBottom" type="java.lang.Integer">
+            <column name="tp_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpRight" type="java.lang.Integer">
+            <column name="tp_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpHeight" type="java.lang.Integer">
+            <column name="tp_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpWidth" type="java.lang.Integer">
+            <column name="tp_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="tpDisplay" type="string">
+            <column name="tp_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="tpPosition" type="string">
+            <column name="tp_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="tpOverflow" type="string">
+            <column name="tp_overflow" length="16" />
+        </property>
+        <property name="tpLayer" type="java.lang.Integer">
+            <column name="tp_layer" />
+        </property>
+        <property name="tpPaddingTop" type="java.lang.Integer">
+            <column name="tp_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="tpPaddingRight" type="java.lang.Integer">
+            <column name="tp_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="tpPaddingBottom" type="java.lang.Integer">
+            <column name="tp_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="tpPaddingLeft" type="java.lang.Integer">
+            <column name="tp_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <set name="TDivisions" table="t_division" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tp_id" length="128">
+                    <comment>
+                    &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TDivision" />
+        </set>
+    </class>
+</hibernate-mapping>

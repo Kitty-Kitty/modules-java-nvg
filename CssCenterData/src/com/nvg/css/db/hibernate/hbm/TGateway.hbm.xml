@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TGateway" table="t_gateway" catalog="css_center">
+        <id name="gwId" type="string">
+            <column name="gw_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <property name="gwName" type="string">
+            <column name="gw_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwStatus" type="java.lang.Integer">
+            <column name="gw_status">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwIp" type="string">
+            <column name="gw_ip" length="32">
+                <comment>&#129;0&#131;9&#129;0&#131;9IP</comment>
+            </column>
+        </property>
+        <property name="gwNetwork" type="string">
+            <column name="gw_network" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwMac" type="string">
+            <column name="gw_mac" length="64">
+                <comment>MAC&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwTcpPort" type="java.lang.Integer">
+            <column name="gw_tcp_port">
+                <comment>tcp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwUdpPort" type="java.lang.Integer">
+            <column name="gw_udp_port">
+                <comment>udp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gwRegistTime" type="timestamp">
+            <column name="gw_regist_time" length="19">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <set name="TSystems" table="t_system" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gw_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TSystem" />
+        </set>
+    </class>
+</hibernate-mapping>

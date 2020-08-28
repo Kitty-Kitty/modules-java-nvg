@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TServer" table="t_server" catalog="css_center">
+        <id name="svrId" type="string">
+            <column name="svr_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TSystem" class="com.nvg.css.db.domain.TSystem" fetch="select">
+            <column name="sys_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TDeviceType" class="com.nvg.css.db.domain.TDeviceType" fetch="select">
+            <column name="dt_type" />
+        </many-to-one>
+        <property name="cssId" type="string">
+            <column name="css_id" length="128" />
+        </property>
+        <property name="svrName" type="string">
+            <column name="svr_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrStatus" type="java.lang.Integer">
+            <column name="svr_status">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrIp" type="string">
+            <column name="svr_ip" length="32">
+                <comment>&#129;0&#131;9&#129;0&#131;9IP</comment>
+            </column>
+        </property>
+        <property name="svrNetwork" type="string">
+            <column name="svr_network" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrMac" type="string">
+            <column name="svr_mac" length="64">
+                <comment>MAC&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrUdpPort" type="java.lang.Integer">
+            <column name="svr_udp_port">
+                <comment>udp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrTcpPort" type="java.lang.Integer">
+            <column name="svr_tcp_port">
+                <comment>tcp&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrRegistTime" type="timestamp">
+            <column name="svr_regist_time" length="19">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrVersion" type="string">
+            <column name="svr_version" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrLimitDisk" type="java.lang.Integer">
+            <column name="svr_limit_disk">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrLimitMemory" type="java.lang.Integer">
+            <column name="svr_limit_memory">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrLimitCpu" type="java.lang.Integer">
+            <column name="svr_limit_cpu">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9CPU&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="svrLimitNetwork" type="java.lang.Integer">
+            <column name="svr_limit_network">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <set name="TReGroupServers" table="t_re_group_server" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="svr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReGroupServer" />
+        </set>
+        <set name="TRootResources" table="t_root_resource" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="svr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TRootResource" />
+        </set>
+        <set name="TFontResources" table="t_font_resource" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="svr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TFontResource" />
+        </set>
+    </class>
+</hibernate-mapping>

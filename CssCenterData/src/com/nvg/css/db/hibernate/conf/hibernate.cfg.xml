@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">novigo</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/css_center</property>
+  <property name="hibernate.connection.username">root</property>
+  <!-- 配置dialect方言，明确告诉hibernate连接是哪种数据库 -->
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <!-- 显示出对应的sql语句 -->
+  <property name="show_sql">true</property>
+  <!-- 配置可以使用getCurrentSession() -->
+  <property name="current_session_context_class">thread</property>
+  <!-- 让hibernate给我们自动创建表： 
+	 create表示每次都重新创建；
+	 update表示如果没有表，则创建，已经存在则判断表结构是否有变化，有变化则重新创建；-->
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TBackground.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TBackgroundPlay.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TBackgroundSchedule.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TCanvas.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TController.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TDeviceType.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TDivision.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TFontBackground.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TFontResource.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TGateway.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TGroup.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TMonitor.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TReGroupPermission.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TReGroupServer.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TRePlayPermission.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TReResourcePermission.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TResource.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TReUsrgPermission.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TReVedioSchedulePermission.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TRootResource.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TServer.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TSystem.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TSystemExceptionLog.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TSystemLog.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TTemplate.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TUser.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TUserGroup.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TUserLog.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TVersion.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TVideoPlay.hbm.xml"/>
+  <mapping resource="com/nvg/css/db/hibernate/hbm/TVideoSchedule.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

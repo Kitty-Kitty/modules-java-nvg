@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="gmfSerializerUML2">
+  <packagedElement xmi:type="uml:Package" xmi:id="_h8TKcL2mEeWs5ca0lOZjIQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_l-yIcr2mEeWs5ca0lOZjIQ" name="gmf">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qgbHoL2mEeWs5ca0lOZjIQ" name="core">
+        <packagedElement xmi:type="uml:Package" xmi:id="_spXKEr2mEeWs5ca0lOZjIQ" name="serializer">
+          <ownedComment xmi:id="_W_VJwL2qEeWs5ca0lOZjIQ" annotatedElement="_J0FX2L2nEeWs5ca0lOZjIQ">
+            <body>this is a test commit&#xD;
+</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_0lSe0L2mEeWs5ca0lOZjIQ" name="SerializerFilter"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_J0FX2L2nEeWs5ca0lOZjIQ" name="AfterFilter" clientDependency="_r3OtFb2nEeWs5ca0lOZjIQ">
+            <ownedAttribute xmi:id="_ZXeNML2nEeWs5ca0lOZjIQ" name="name"/>
+            <ownedAttribute xmi:id="_ZmYy8L2nEeWs5ca0lOZjIQ" name="Property2"/>
+            <ownedAttribute xmi:id="_8WPV0L2qEeWs5ca0lOZjIQ" name="Property1"/>
+            <interfaceRealization xmi:id="_r3OtFb2nEeWs5ca0lOZjIQ" name="InterfaceRealization1" supplier="_0lSe0L2mEeWs5ca0lOZjIQ" client="_J0FX2L2nEeWs5ca0lOZjIQ" contract="_0lSe0L2mEeWs5ca0lOZjIQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_7SBqUr2rEeWs5ca0lOZjIQ" name="base"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_DqdU6L2sEeWs5ca0lOZjIQ" name="Serializer"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HszwAL2sEeWs5ca0lOZjIQ" name="MapSerializer" clientDependency="_MM2zw72sEeWs5ca0lOZjIQ">
+            <interfaceRealization xmi:id="_MM2zw72sEeWs5ca0lOZjIQ" name="InterfaceRealization1" supplier="_DqdU6L2sEeWs5ca0lOZjIQ" client="_HszwAL2sEeWs5ca0lOZjIQ" contract="_DqdU6L2sEeWs5ca0lOZjIQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_VG7y2L2sEeWs5ca0lOZjIQ" name="ListSerializer" clientDependency="_aRcv472sEeWs5ca0lOZjIQ">
+            <interfaceRealization xmi:id="_aRcv472sEeWs5ca0lOZjIQ" name="InterfaceRealization1" supplier="_DqdU6L2sEeWs5ca0lOZjIQ" client="_VG7y2L2sEeWs5ca0lOZjIQ" contract="_DqdU6L2sEeWs5ca0lOZjIQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_fCmxwL2sEeWs5ca0lOZjIQ" name="ArraySerializer" clientDependency="_gvejQ72sEeWs5ca0lOZjIQ">
+            <interfaceRealization xmi:id="_gvejQ72sEeWs5ca0lOZjIQ" name="InterfaceRealization1" supplier="_DqdU6L2sEeWs5ca0lOZjIQ" client="_fCmxwL2sEeWs5ca0lOZjIQ" contract="_DqdU6L2sEeWs5ca0lOZjIQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xF1tuL2sEeWs5ca0lOZjIQ" name="CollectionSerializer" clientDependency="_zbXao72sEeWs5ca0lOZjIQ">
+            <interfaceRealization xmi:id="_zbXao72sEeWs5ca0lOZjIQ" name="InterfaceRealization1" supplier="_DqdU6L2sEeWs5ca0lOZjIQ" client="_xF1tuL2sEeWs5ca0lOZjIQ" contract="_DqdU6L2sEeWs5ca0lOZjIQ"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

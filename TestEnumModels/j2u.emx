@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.uml.msl.model" version="7.0.0"><feature description="" name="com.ibm.xtools.ruml.feature" url="" version="7.0.0"/></signature>?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?">
+  <uml:Package xmi:id="_DSxRIJzpEea68uV-_Tmy4g" name="j2u">
+    <packageImport xmi:id="_DTJroJzpEea68uV-_Tmy4g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_DTJroZzpEea68uV-_Tmy4g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DTXuEJzpEea68uV-_Tmy4g" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DTXuEZzpEea68uV-_Tmy4g" name="nvg">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DTYVIJzpEea68uV-_Tmy4g" name="test">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_DTYVIZzpEea68uV-_Tmy4g" name="TestEnum">
+            <ownedComment xmi:id="_DTY8MJzpEea68uV-_Tmy4g" annotatedElement="_DTYVIZzpEea68uV-_Tmy4g">
+              <body>@title&amp;nbsp;:&amp;nbsp;TestEnum.java&lt;br>@description&amp;nbsp;:&amp;nbsp;TODO(用一句话描述该类型的作用)&lt;br>@author&amp;nbsp;:&amp;nbsp;fangzhenmu&lt;br>@created&amp;nbsp;:&amp;nbsp;Oct&amp;nbsp;28,&amp;nbsp;20164:28:55&amp;nbsp;PM</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_DTg4AJzpEea68uV-_Tmy4g" name="abbreviation" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_DTiGIJzpEea68uV-_Tmy4g" name="TestEnum" visibility="private">
+              <ownedParameter xmi:id="_DTitMJzpEea68uV-_Tmy4g" name="abbreviation">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedLiteral xmi:id="_DTbYcJzpEea68uV-_Tmy4g" name="SMALL" classifier="_DTYVIZzpEea68uV-_Tmy4g">
+              <slot xmi:id="_DTcmkJzpEea68uV-_Tmy4g">
+                <value xmi:type="uml:LiteralString" xmi:id="_DTcmkZzpEea68uV-_Tmy4g" name="arg0" value="S">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </value>
+              </slot>
+            </ownedLiteral>
+            <ownedLiteral xmi:id="_DTdNoJzpEea68uV-_Tmy4g" name="MEDIUM" classifier="_DTYVIZzpEea68uV-_Tmy4g">
+              <slot xmi:id="_DTd0sJzpEea68uV-_Tmy4g">
+                <value xmi:type="uml:LiteralString" xmi:id="_DTd0sZzpEea68uV-_Tmy4g" name="arg0" value="M">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </value>
+              </slot>
+            </ownedLiteral>
+            <ownedLiteral xmi:id="_DTd0spzpEea68uV-_Tmy4g" name="LARGE" classifier="_DTYVIZzpEea68uV-_Tmy4g">
+              <slot xmi:id="_DTebwJzpEea68uV-_Tmy4g">
+                <value xmi:type="uml:LiteralString" xmi:id="_DTebwZzpEea68uV-_Tmy4g" name="arg0" value="L">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </value>
+              </slot>
+            </ownedLiteral>
+            <ownedLiteral xmi:id="_DTebwpzpEea68uV-_Tmy4g" name="EXTRA_LARGE" classifier="_DTYVIZzpEea68uV-_Tmy4g">
+              <slot xmi:id="_DTfC0JzpEea68uV-_Tmy4g">
+                <value xmi:type="uml:LiteralString" xmi:id="_DTfp4JzpEea68uV-_Tmy4g" name="arg0" value="XL">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </value>
+              </slot>
+            </ownedLiteral>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_DTIdgJzpEea68uV-_Tmy4g">
+      <eAnnotations xmi:id="_DTIdgZzpEea68uV-_Tmy4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DTJEkJzpEea68uV-_Tmy4g">
+      <eAnnotations xmi:id="_DTJEkZzpEea68uV-_Tmy4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Default.epx#_fNwoAAqoEd6-N_NOT9vsCA?Default/Default?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Default.epx#_a_S3wNWLEdiy4IqP8whjFA?Default?"/>
+    </profileApplication>
+    <profileApplication xmi:id="_DTJEkpzpEea68uV-_Tmy4g">
+      <eAnnotations xmi:id="_DTJEk5zpEea68uV-_Tmy4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_4OVBUD0TEeKt-L0gyEptgQ?Deployment/Deployment?"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML2_MSL_PROFILES/Deployment.epx#_vjbuwOvHEdiDX5bji0iVSA?Deployment?"/>
+    </profileApplication>
+  </uml:Package>
+  <Default:Documentation xmi:id="_DTaKUJzpEea68uV-_Tmy4g" base_Comment="_DTY8MJzpEea68uV-_Tmy4g"/>
+</xmi:XMI>

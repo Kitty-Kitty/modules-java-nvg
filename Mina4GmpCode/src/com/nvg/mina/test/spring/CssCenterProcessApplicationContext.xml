@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-2.5.xsd 
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+						">
+						
+	<!--创建GmpDeviceRegisterProcess-->
+	<!--<bean id="ccGmpDeviceRegisterProcess" class="com.nvg.css.center.gmp.request.process.recevice.base.CcGmpDeviceRegisterProcess">
+		<property name="gmpBeanName" value="com.nvg.css.center.gmp.request.beans.base.CssGmpHost"/>
+	</bean>
+	  -->
+	<!--创建GmpDeviceRegisterProcess-->
+	<!-- 
+	<bean id="ccGmpDeviceCancelRegisterProcess" class="com.nvg.css.center.gmp.request.process.recevice.base.CcGmpDeviceCancelRegisterProcess">
+		<property name="gmpBeanName" value="com.nvg.css.center.gmp.request.beans.base.CssGmpHost"/>
+	</bean>
+	 -->
+	
+	<!--创建请求处理管理器GmpProcessesManager-->
+	<bean id="nvgGmpProcessesManager" class="com.nvg.mina.gmp.process.NvgGmpProcessesManager" init-method="start">
+		<property name="gmpSemhProcessesMap">
+			<map>
+				<entry key="10001" value="com.nvg.css.center.gmp.request.process.recevice.base.CcGmpDeviceRegisterProcess" />
+				<entry key="10002" value="com.nvg.css.center.gmp.request.process.recevice.base.CcGmpDeviceCancelRegisterProcess" />
+			</map>
+		</property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TSystemLog" table="t_system_log" catalog="css_center">
+        <id name="slIndex" type="java.lang.Integer">
+            <column name="sl_index" />
+            <generator class="identity" />
+        </id>
+        <property name="slTime" type="timestamp">
+            <column name="sl_time" length="19" />
+        </property>
+        <property name="slType" type="java.lang.Integer">
+            <column name="sl_type" />
+        </property>
+        <property name="slLevel" type="string">
+            <column name="sl_level" length="16" />
+        </property>
+        <property name="slComment" type="string">
+            <column name="sl_comment" length="256" />
+        </property>
+    </class>
+</hibernate-mapping>

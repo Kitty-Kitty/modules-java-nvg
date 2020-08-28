@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TUser" table="t_user" catalog="css_center">
+        <id name="usrId" type="string">
+            <column name="usr_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TUserGroup" class="com.nvg.css.db.domain.TUserGroup" fetch="select">
+            <column name="usg_id" length="128" />
+        </many-to-one>
+        <property name="usrLogin" type="string">
+            <column name="usr_login" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrPassword" type="string">
+            <column name="usr_password" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrName" type="string">
+            <column name="usr_name" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrType" type="java.lang.Integer">
+            <column name="usr_type">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="masterId" type="string">
+            <column name="master_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrEmial" type="string">
+            <column name="usr_emial" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrPhone" type="string">
+            <column name="usr_phone" length="16">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrAddress" type="string">
+            <column name="usr_address" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrIsvalid" type="java.lang.Integer">
+            <column name="usr_isvalid">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrCreateTime" type="timestamp">
+            <column name="usr_create_time" length="19">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="usrBz" type="string">
+            <column name="usr_bz" length="1024">
+                <comment>&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <set name="TReVedioSchedulePermissions" table="t_re_vedio_schedule_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReVedioSchedulePermission" />
+        </set>
+        <set name="TRePlayPermissions" table="t_re_play_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TRePlayPermission" />
+        </set>
+        <set name="TReUsrgPermissions" table="t_re_usrg_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReUsrgPermission" />
+        </set>
+        <set name="TReResourcePermissions" table="t_re_resource_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usr_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReResourcePermission" />
+        </set>
+        <set name="TReGroupPermissions" table="t_re_group_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128">
+                    <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReGroupPermission" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TRePlayPermission" table="t_re_play_permission" catalog="css_center">
+        <id name="rppId" type="java.lang.Integer">
+            <column name="rpp_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TVideoPlay" class="com.nvg.css.db.domain.TVideoPlay" fetch="select">
+            <column name="vp_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9id</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="TUser" class="com.nvg.css.db.domain.TUser" fetch="select">
+            <column name="usr_id" length="128" />
+        </many-to-one>
+        <many-to-one name="TUserGroup" class="com.nvg.css.db.domain.TUserGroup" fetch="select">
+            <column name="usrg_id" length="128">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+            </column>
+        </many-to-one>
+        <property name="uppPosition" type="string">
+            <column name="upp_position" length="128" />
+        </property>
+    </class>
+</hibernate-mapping>

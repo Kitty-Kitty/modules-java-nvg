@@ -1,0 +1,32 @@
+language: java
+
+script: mvn test
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      mvn clean test jacoco:report coveralls:report;
+      mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.host.url=https://sonarqube.com -Dsonar.login=df16219a00545aae71f880423a6f23191330744f;
+    fi
+
+env:
+  global:
+   # COVERITY_SCAN_TOKEN
+   - secure: "JuTWT2u7BWQEJGMGkVvQMIQxwxajntxqbCGYt+bJD3JQhioPVFUJoEFrLCx+jJ0qLy5usrneCDFrvRhvTh6C+95kvHypvGQ3UoeWyXS8zD+GRPUyskbuQ7P60kqqIqc+naGd3uyGddniixoAA6C/Ptmknhls4FlhDCMjW3HDS0c="
+
+addons:
+  coverity_scan:
+    project:
+      name: "dblock/oshi"
+      description: "Build submitted via Travis CI"
+    notification_email: widdis@gmail.com
+    build_command_prepend: "mvn clean"
+    build_command:   "mvn -DskipTests=true compile"
+    branch_pattern: coverity_scan
+
+matrix:
+  include:
+    - os: linux
+      jdk: oraclejdk8
+    - os: osx
+      osx_image: xcode8

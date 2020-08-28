@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TGroup" table="t_group" catalog="css_center">
+        <id name="gpId" type="string">
+            <column name="gp_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="TSystem" class="com.nvg.css.db.domain.TSystem" fetch="select">
+            <column name="sys_id" length="128" />
+        </many-to-one>
+        <property name="gpName" type="string">
+            <column name="gp_name" length="128" />
+        </property>
+        <property name="gpIndex" type="java.lang.Integer">
+            <column name="gp_index" />
+        </property>
+        <property name="gpColumns" type="java.lang.Integer">
+            <column name="gp_columns" />
+        </property>
+        <property name="gpRows" type="java.lang.Integer">
+            <column name="gp_rows" />
+        </property>
+        <property name="gpUnitHeight" type="java.lang.Integer">
+            <column name="gp_unit_height" />
+        </property>
+        <property name="gpUnitWidth" type="java.lang.Integer">
+            <column name="gp_unit_width" />
+        </property>
+        <property name="gpTop" type="java.lang.Integer">
+            <column name="gp_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpLeft" type="java.lang.Integer">
+            <column name="gp_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9X&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpBottom" type="java.lang.Integer">
+            <column name="gp_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpRight" type="java.lang.Integer">
+            <column name="gp_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9Y&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpHeight" type="java.lang.Integer">
+            <column name="gp_height">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpWidth" type="java.lang.Integer">
+            <column name="gp_width">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9</comment>
+            </column>
+        </property>
+        <property name="gpDisplay" type="string">
+            <column name="gp_display" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:enable(&#129;0&#131;9&#129;0&#131;9),disable(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="gpPosition" type="string">
+            <column name="gp_position" length="16">
+                <comment>
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9:static(&#129;0&#131;9&#129;0&#131;9)&#129;0&#131;9relative(&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="gpOverflow" type="string">
+            <column name="gp_overflow" length="16" />
+        </property>
+        <property name="gpLayer" type="java.lang.Integer">
+            <column name="gp_layer" />
+        </property>
+        <property name="gpPaddingTop" type="java.lang.Integer">
+            <column name="gp_padding_top">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 top
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="gpPaddingRight" type="java.lang.Integer">
+            <column name="gp_padding_right">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 right
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="gpPaddingBottom" type="java.lang.Integer">
+            <column name="gp_padding_bottom">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 bottom
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <property name="gpPaddingLeft" type="java.lang.Integer">
+            <column name="gp_padding_left">
+                <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9 left
+                &#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9(&#129;0&#131;9&#129;0&#131;9)</comment>
+            </column>
+        </property>
+        <set name="TReGroupServers" table="t_re_group_server" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReGroupServer" />
+        </set>
+        <set name="TVideoPlays" table="t_video_play" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TVideoPlay" />
+        </set>
+        <set name="TBackgroundSchedules" table="t_background_schedule" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackgroundSchedule" />
+        </set>
+        <set name="TBackgroundPlays" table="t_background_play" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackgroundPlay" />
+        </set>
+        <set name="TMonitors" table="t_monitor" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TMonitor" />
+        </set>
+        <set name="TTemplates" table="t_template" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TTemplate" />
+        </set>
+        <set name="TBackgrounds" table="t_background" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TBackground" />
+        </set>
+        <set name="TVideoSchedules" table="t_video_schedule" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TVideoSchedule" />
+        </set>
+        <set name="TReGroupPermissions" table="t_re_group_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReGroupPermission" />
+        </set>
+        <set name="TCanvases" table="t_canvas" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="gp_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TCanvas" />
+        </set>
+    </class>
+</hibernate-mapping>

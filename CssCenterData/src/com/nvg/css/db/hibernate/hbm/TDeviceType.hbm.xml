@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TDeviceType" table="t_device_type" catalog="css_center">
+        <id name="dtType" type="int">
+            <column name="dt_type" />
+            <generator class="assigned" />
+        </id>
+        <property name="dtName" type="string">
+            <column name="dt_name" length="128" />
+        </property>
+        <property name="dtComment" type="string">
+            <column name="dt_comment" length="128" />
+        </property>
+        <set name="TSystems" table="t_system" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="dt_type" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TSystem" />
+        </set>
+        <set name="TServers" table="t_server" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="dt_type" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TServer" />
+        </set>
+        <set name="TControllers" table="t_controller" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="dt_type" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TController" />
+        </set>
+    </class>
+</hibernate-mapping>

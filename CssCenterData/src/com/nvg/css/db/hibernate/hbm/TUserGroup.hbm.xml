@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 10, 2016 7:15:44 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.nvg.css.db.domain.TUserGroup" table="t_user_group" catalog="css_center">
+        <id name="usgId" type="string">
+            <column name="usg_id" length="128" />
+            <generator class="assigned" />
+        </id>
+        <property name="usgName" type="string">
+            <column name="usg_name" length="128" />
+        </property>
+        <property name="usgDescription" type="string">
+            <column name="usg_description" length="128" />
+        </property>
+        <property name="usgCreateTime" type="timestamp">
+            <column name="usg_create_time" length="19" />
+        </property>
+        <set name="TUsers" table="t_user" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usg_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TUser" />
+        </set>
+        <set name="TRePlayPermissions" table="t_re_play_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128">
+                    <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TRePlayPermission" />
+        </set>
+        <set name="TReResourcePermissions" table="t_re_resource_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128">
+                    <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReResourcePermission" />
+        </set>
+        <set name="TReUsrgPermissions" table="t_re_usrg_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128" />
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReUsrgPermission" />
+        </set>
+        <set name="TReVedioSchedulePermissions" table="t_re_vedio_schedule_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128">
+                    <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReVedioSchedulePermission" />
+        </set>
+        <set name="TReGroupPermissions" table="t_re_group_permission" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="usrg_id" length="128">
+                    <comment>&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9&#129;0&#131;9ID</comment>
+                </column>
+            </key>
+            <one-to-many class="com.nvg.css.db.domain.TReGroupPermission" />
+        </set>
+    </class>
+</hibernate-mapping>
